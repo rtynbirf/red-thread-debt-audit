@@ -1,0 +1,113 @@
+{
+ "band": {
+  "B50": 1.77,
+  "B75": 2.225,
+  "B90": 2.73,
+  "Bmax": 6.22,
+  "n_peace_points": 19,
+  "window": "JPN 2001–2019, 2020 исключён заранее"
+ },
+ "prereg": {
+  "PB5": true,
+  "PB6": true,
+  "PB7": true,
+  "PB8": true
+ },
+ "documented_above_band": "22/22",
+ "unnamed": [
+  {
+   "territory": "UKR",
+   "year": 2021,
+   "resid_pp": -8.23,
+   "outside_band": true
+  },
+  {
+   "territory": "UKR",
+   "year": 2005,
+   "resid_pp": -5.49,
+   "outside_band": true
+  },
+  {
+   "territory": "JPN",
+   "year": 2004,
+   "resid_pp": 6.22,
+   "outside_band": true
+  },
+  {
+   "territory": "JPN",
+   "year": 2022,
+   "resid_pp": 9.16,
+   "outside_band": true
+  }
+ ],
+ "big4_top5": [
+  {
+   "territory": "CHN",
+   "year": 2016,
+   "sfa_pp": 9.28,
+   "in_band": false
+  },
+  {
+   "territory": "USA",
+   "year": 2020,
+   "sfa_pp": 8.75,
+   "in_band": false
+  },
+  {
+   "territory": "CHN",
+   "year": 2007,
+   "sfa_pp": 7.77,
+   "in_band": false
+  },
+  {
+   "territory": "CHN",
+   "year": 2009,
+   "sfa_pp": 7.73,
+   "in_band": false
+  },
+  {
+   "territory": "USA",
+   "year": 2004,
+   "sfa_pp": 6.97,
+   "in_band": false
+  }
+ ],
+ "reclassification_peaceful": {
+  "UKR": {
+   "old_le2": 7,
+   "band_leB90": 8,
+   "n": 23
+  },
+  "TUR": {
+   "old_le2": 6,
+   "band_leB90": 14,
+   "n": 23
+  },
+  "BRA": {
+   "old_le2": 10,
+   "band_leB90": 16,
+   "n": 23
+  },
+  "PAK": {
+   "old_le2": 8,
+   "band_leB90": 11,
+   "n": 23
+  },
+  "JPN": {
+   "old_le2": 13,
+   "band_leB90": 19,
+   "n": 23
+  }
+ },
+ "meta": {
+  "sources": [
+   "/home/z/my-project/download/Red_Thread_Audit_v0_5_summary.json",
+   "/home/z/my-project/download/Red_Thread_Audit_v0_4_results.csv"
+  ],
+  "rule": "порог метода = перцентиль контроля (E10); круглые числа запрещены",
+  "round": "13, задание (5) из v6.0"
+ },
+ "integrity": {
+  "summary_sha256": "7fed5015c85e13e1351ab1e7281abe80a7d0b0f28fdea78ec3bc50e81eb3d7a9"
+ }
+}
