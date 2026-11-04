@@ -1,0 +1,4 @@
+{
+ "stamp": "[{'src': 'IMF datamapper', 'code': 'GGXWDG_NGDP', 'file': '/home/z/my-project/scripts/rta_v0_4_data/dm_GGXWDG_NGDP.json'}, {'src': 'IMF datamapper', 'code': 'pb', 'file': '/home/z/my-project/scripts/rta_v0_4_data/dm_pb.json'}, {'src': 'IMF datamapper', 'code': 'ie', 'file': '/home/z/my-project/scripts/rta_v0_4_data/dm_ie.json'}, {'src': 'IMF datamapper', 'code': 'NGDP_RPCH', 'file': '/home/z/my-project/scripts/rta_v0_4_data/dm_NGDP_RPCH.json'}, {'src': 'IMF datamapper', 'code': 'PCPIPCH', 'file': '/home/z/my-project/scripts/rta_v0_4_data/dm_PCPIPCH.json'}]",
+ "note": "см. mtime файлов"
+}
