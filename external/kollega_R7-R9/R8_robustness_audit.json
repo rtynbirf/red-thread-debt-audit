@@ -1,0 +1,124 @@
+{
+  "task": "R8 robustness audit of R7-v0.1 metrics",
+  "source_facts": {
+    "axes_survive": 3,
+    "contact_content": 0,
+    "contact_perfect_probe": 0,
+    "contact_timing": 1,
+    "contact_timing_spoofable": 1,
+    "contact_re_read": 20,
+    "causal_candidates": 32,
+    "causal_foreign_coverage": 0,
+    "causal_law_partition": 1,
+    "coherence_self_recovery": 0,
+    "coherence_world_partition": 1
+  },
+  "Delta6_variants": {
+    "R7-v0.1": {
+      "value": 0.3333333333333333,
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "strict-no-spoof-channel": {
+      "value": 0.3333333333333333,
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "count-world-partition": {
+      "value": 0.5,
+      "vector": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    "count-timing-but-not-spoof-resistance": {
+      "value": 0.5,
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  "Delta11": {
+    "R7-v0.1": {
+      "value": 0.5454545454545454,
+      "vector": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "strict_no_spoofable_timing": {
+      "value": 0.45454545454545453,
+      "vector": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "credit_CAU_sal_world_recovery": {
+      "value": 0.6363636363636364,
+      "vector": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  },
+  "r_marg": {
+    "R7-v0.1": 0.4,
+    "strict_non_spoofable": 0.25
+  },
+  "robust_conclusion": {
+    "three_axes_remain_necessary_in_S0R": true,
+    "pairwise_orthogonality_remains_falsified": true,
+    "extra_computation_recovers_CAUSAL_foreign_positions": false,
+    "re_read_counts_as_reinstantiation_not_recovery": true,
+    "timing_is_usable_signal_but_not_robust_recovery": true,
+    "general_minimality": "UNKNOWN"
+  }
+}

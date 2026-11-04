@@ -1,0 +1,89 @@
+{
+  "status": "R7-v0.1_RECOMPUTED",
+  "canonical_notation_found": false,
+  "Delta6": {
+    "vector": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "mean": 0.3333333333333333
+  },
+  "Delta11": {
+    "vector": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "mean": 0.5454545454545454
+  },
+  "r_marg": {
+    "value": 0.4,
+    "numerator": 2,
+    "denominator": 5
+  },
+  "chain11": [
+    [
+      "S0-R baseline reproduced",
+      1
+    ],
+    [
+      "CAUSAL axis survives",
+      1
+    ],
+    [
+      "COHERENCE axis survives",
+      1
+    ],
+    [
+      "CONTACT axis survives",
+      1
+    ],
+    [
+      "CONTACT content-only recovery",
+      0
+    ],
+    [
+      "CONTACT perfect-model probe",
+      0
+    ],
+    [
+      "CONTACT timing channel",
+      1
+    ],
+    [
+      "CONTACT timing spoof resistance",
+      0
+    ],
+    [
+      "CAUSAL max-coherence recovery",
+      0
+    ],
+    [
+      "CAUSAL law-level world partition",
+      1
+    ],
+    [
+      "COHERENCE self-sector recovery",
+      0
+    ]
+  ],
+  "basis": {
+    "S0-R": "D_with=True, D_without=False for all three axes",
+    "CONTACT": "content policies 0/20; perfect probe 0.0; timing 1.0 but spoofable 1.0; reread 20/20 is re-instantiation",
+    "CAUSAL": "MAX-COHERENCE enumerates 32 candidates but covers 0/8 foreign-difference positions; law-level partition recovered",
+    "COHERENCE": "self-sector remains GLUED; world-sector law check recovers separation"
+  },
+  "rule": "r_marg excludes re-reading/reinstantiation of the amputated axis"
+}

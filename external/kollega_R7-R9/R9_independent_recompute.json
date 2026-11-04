@@ -1,0 +1,44 @@
+{
+  "task": "R9 independent recomputation and sensitivity audit of R7/R8",
+  "recomputed": {
+    "R7-v0.1": {
+      "Delta6": 0.3333333333333333,
+      "Delta11": 0.5454545454545454,
+      "r_marg": 0.4
+    },
+    "strict-no-spoof-channel": {
+      "Delta6": 0.3333333333333333,
+      "Delta11": 0.45454545454545453,
+      "r_marg": 0.25
+    },
+    "count-world-partition": {
+      "Delta6": 0.5,
+      "Delta11": 0.5454545454545454
+    },
+    "count-timing-but-not-spoof-resistance": {
+      "Delta6": 0.5,
+      "Delta11": 0.5454545454545454
+    },
+    "credit-CAU-sal-world-recovery": {
+      "Delta6": 0.3333333333333333,
+      "Delta11": 0.6363636363636364
+    }
+  },
+  "checks": {
+    "Delta6_length_is_6": true,
+    "Delta11_length_is_11": true,
+    "Delta6_binary": true,
+    "Delta11_binary": true,
+    "R7_exact_reproduction": true,
+    "R8_strict_Delta6_unchanged": true,
+    "R8_strict_Delta11_lower": true,
+    "R8_r_marg_lower": true
+  },
+  "findings": [
+    "R7 is exactly reproducible from the recovered vectors: Delta6=1/3, Delta11=6/11, r_marg=2/5.",
+    "R8 does not overturn R7; it exposes sensitivity to the treatment of spoofable timing and alternative counting conventions.",
+    "The strict no-spoof timing treatment lowers Delta11 from 6/11 to 5/11 and r_marg from 0.40 to 0.25.",
+    "Therefore timing is a usable signal in the recovered artifact set but is not robust evidence of recovery when spoofability is admitted.",
+    "The available R7/R8 artifacts do not contain enough empirical observations to estimate a world-level causal effect; that remains UNKNOWN rather than inferred."
+  ]
+}
