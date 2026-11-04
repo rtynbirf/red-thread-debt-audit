@@ -1,0 +1,8 @@
+# --- session tooling: не часть программы ---
+__pycache__/
+*.pyc
+*.pkl
+scripts/ring1_*_out/
+scripts/rta_*_out/
+tool-results/
+.DS_Store
