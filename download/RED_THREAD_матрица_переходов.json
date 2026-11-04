@@ -1,0 +1,698 @@
+{
+  "task": "R10 Block B: observed event/transition matrix (real time series)",
+  "rows": 230,
+  "window": "2001-2023",
+  "cases": [
+    "GRC",
+    "ARG",
+    "ZMB",
+    "LKA",
+    "DEU",
+    "UKR",
+    "TUR",
+    "BRA",
+    "PAK",
+    "JPN"
+  ],
+  "spoof_windows": {
+    "ARG": [
+      2002,
+      2003,
+      2004,
+      2020
+    ],
+    "ZMB": [
+      2020,
+      2021
+    ],
+    "LKA": [
+      2022,
+      2023
+    ],
+    "UKR": [
+      2015,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "coverage": {
+    "delta_D": 0.9782608695652174,
+    "Resource": 0.913,
+    "Extraction": 0.7174,
+    "UNKNOWN_counts": {
+      "RT": 20,
+      "TAX": 65,
+      "d_prev": 0
+    }
+  },
+  "strict_penalty_real_layer": {
+    "share_of_interest_flow_spoofed": 0.0537,
+    "colleague_r_marg_penalty": -0.375,
+    "mechanism": "канал, управляемый стороной неплатежа: сигнал, не доказательство"
+  },
+  "pb3_details": {
+    "spoof_rows_with_ie": 11,
+    "below_peace_median": 2,
+    "share": 0.182
+  },
+  "verdicts": {
+    "PB1": "ПОДТВЕРЖДЕНА",
+    "PB2": "ПОДТВЕРЖДЕНА",
+    "PB3": "ОТКЛОНЕНА",
+    "PB4": "ПОДТВЕРЖДЕНА",
+    "PB5": "ЗАФИКСИРОВАН",
+    "PB6": "ПОДТВЕРЖДЕНА"
+  },
+  "provenance": {
+    "D, pb, ie, g": "IMF datamapper через опубликованные выходы v0.2/v0.5; ZMB pb/ie = WB-GFS fallback (объявлен в v0.2)",
+    "RT": "WB API NY.GDP.TOTL.RT.ZS (total natural resources rents, % GDP), выгрузка 2026-09-09, dump 2026-07-13",
+    "TAX": "WB API GC.TAX.TOTL.GD.ZS (tax revenue, % GDP), выгрузка 2026-09-09, dump 2026-07-13",
+    "band": "v0.6: B50=1.77, B90=2.73 (перцентили мирного контроля JPN)",
+    "graph": "замороженный v0.1: d[t+1]=((1+r)/(1+g))·d[t]−pb; r = неявная ie/d[t−1], дефлированная π"
+  },
+  "delays": [
+    {
+      "case": "GRC",
+      "from": "2010-05",
+      "to": "2012-03",
+      "months": 22,
+      "note": "потеря доступа → PSI",
+      "type": "RecoveryTime+RestructuringDelay"
+    },
+    {
+      "case": "ARG",
+      "from": "2001-12",
+      "to": "2005-06",
+      "months": 42,
+      "note": "дефолт → обмен-2005",
+      "type": "RestructuringDelay"
+    },
+    {
+      "case": "ZMB",
+      "from": "2020-11",
+      "to": "2024-03",
+      "months": 28,
+      "note": "дефолт → сделка Eurobonds",
+      "type": "RestructuringDelay"
+    },
+    {
+      "case": "LKA",
+      "from": "2022-04",
+      "to": "2024-09",
+      "months": 29,
+      "note": "мораторий → сделка",
+      "type": "RestructuringDelay"
+    }
+  ],
+  "band": {
+    "B50": 1.77,
+    "B90": 2.73
+  },
+  "pb3_posthoc": {
+    "status": "POST-HOC (после отклонённой направленной формы)",
+    "spoof_rows_all_band_events": "9/11",
+    "event_rows_total": 115,
+    "spoof_share_among_events": 0.078,
+    "event_base_rate": 0.5,
+    "r_implicit_below_peace_median_in_spoof": "4/11",
+    "corrected_law": "9/11 спуф-лет = годы-события (>B90); счёт процентов в неплатеже НЕ зануляется (9/11 выше мирной медианы — accrual просрочек), зануляется неявная СТАВКА через знаменатель (4/11 ниже медианы); подпись спуф-года разлита между оператором и ставкой — единого канала-доказательства нет"
+  },
+  "events_v06": [
+    {
+      "case": "GRC",
+      "year": 2001,
+      "resid": 4.73
+    },
+    {
+      "case": "GRC",
+      "year": 2005,
+      "resid": 3.11
+    },
+    {
+      "case": "GRC",
+      "year": 2010,
+      "resid": 6.16
+    },
+    {
+      "case": "GRC",
+      "year": 2011,
+      "resid": 5.28
+    },
+    {
+      "case": "GRC",
+      "year": 2012,
+      "resid": -31.16
+    },
+    {
+      "case": "GRC",
+      "year": 2013,
+      "resid": 6.57
+    },
+    {
+      "case": "GRC",
+      "year": 2014,
+      "resid": -2.96
+    },
+    {
+      "case": "GRC",
+      "year": 2015,
+      "resid": -9.5
+    },
+    {
+      "case": "GRC",
+      "year": 2017,
+      "resid": 4.76
+    },
+    {
+      "case": "GRC",
+      "year": 2018,
+      "resid": 12.74
+    },
+    {
+      "case": "GRC",
+      "year": 2020,
+      "resid": -5.65
+    },
+    {
+      "case": "GRC",
+      "year": 2022,
+      "resid": 6.09
+    },
+    {
+      "case": "GRC",
+      "year": 2023,
+      "resid": -5.31
+    },
+    {
+      "case": "ARG",
+      "year": 2002,
+      "resid": 91.16
+    },
+    {
+      "case": "ARG",
+      "year": 2003,
+      "resid": -8.2
+    },
+    {
+      "case": "ARG",
+      "year": 2004,
+      "resid": 7.0
+    },
+    {
+      "case": "ARG",
+      "year": 2005,
+      "resid": -24.48
+    },
+    {
+      "case": "ARG",
+      "year": 2008,
+      "resid": -5.44
+    },
+    {
+      "case": "ARG",
+      "year": 2009,
+      "resid": -3.69
+    },
+    {
+      "case": "ARG",
+      "year": 2010,
+      "resid": -8.13
+    },
+    {
+      "case": "ARG",
+      "year": 2011,
+      "resid": -4.82
+    },
+    {
+      "case": "ARG",
+      "year": 2014,
+      "resid": -4.19
+    },
+    {
+      "case": "ARG",
+      "year": 2015,
+      "resid": 3.12
+    },
+    {
+      "case": "ARG",
+      "year": 2016,
+      "resid": -7.32
+    },
+    {
+      "case": "ARG",
+      "year": 2018,
+      "resid": 36.93
+    },
+    {
+      "case": "ARG",
+      "year": 2019,
+      "resid": 30.09
+    },
+    {
+      "case": "ARG",
+      "year": 2020,
+      "resid": 25.48
+    },
+    {
+      "case": "ARG",
+      "year": 2021,
+      "resid": 14.02
+    },
+    {
+      "case": "ARG",
+      "year": 2022,
+      "resid": 37.1
+    },
+    {
+      "case": "ARG",
+      "year": 2023,
+      "resid": 113.89
+    },
+    {
+      "case": "ZMB",
+      "year": 2001,
+      "resid": 7.85
+    },
+    {
+      "case": "ZMB",
+      "year": 2002,
+      "resid": 14.65
+    },
+    {
+      "case": "ZMB",
+      "year": 2003,
+      "resid": 22.28
+    },
+    {
+      "case": "ZMB",
+      "year": 2004,
+      "resid": 5.96
+    },
+    {
+      "case": "ZMB",
+      "year": 2005,
+      "resid": -30.14
+    },
+    {
+      "case": "ZMB",
+      "year": 2006,
+      "resid": -37.35
+    },
+    {
+      "case": "ZMB",
+      "year": 2007,
+      "resid": 3.32
+    },
+    {
+      "case": "ZMB",
+      "year": 2009,
+      "resid": 4.46
+    },
+    {
+      "case": "ZMB",
+      "year": 2011,
+      "resid": 3.06
+    },
+    {
+      "case": "ZMB",
+      "year": 2012,
+      "resid": 7.16
+    },
+    {
+      "case": "ZMB",
+      "year": 2014,
+      "resid": 5.61
+    },
+    {
+      "case": "ZMB",
+      "year": 2015,
+      "resid": 24.38
+    },
+    {
+      "case": "ZMB",
+      "year": 2016,
+      "resid": 5.77
+    },
+    {
+      "case": "ZMB",
+      "year": 2017,
+      "resid": 6.22
+    },
+    {
+      "case": "ZMB",
+      "year": 2018,
+      "resid": 13.53
+    },
+    {
+      "case": "ZMB",
+      "year": 2019,
+      "resid": 22.9
+    },
+    {
+      "case": "ZMB",
+      "year": 2020,
+      "resid": 35.91
+    },
+    {
+      "case": "ZMB",
+      "year": 2022,
+      "resid": 4.39
+    },
+    {
+      "case": "ZMB",
+      "year": 2023,
+      "resid": 41.25
+    },
+    {
+      "case": "LKA",
+      "year": 2001,
+      "resid": 5.79
+    },
+    {
+      "case": "LKA",
+      "year": 2002,
+      "resid": 15.82
+    },
+    {
+      "case": "LKA",
+      "year": 2003,
+      "resid": -4.54
+    },
+    {
+      "case": "LKA",
+      "year": 2004,
+      "resid": 4.46
+    },
+    {
+      "case": "LKA",
+      "year": 2006,
+      "resid": 4.42
+    },
+    {
+      "case": "LKA",
+      "year": 2007,
+      "resid": 6.76
+    },
+    {
+      "case": "LKA",
+      "year": 2008,
+      "resid": 8.54
+    },
+    {
+      "case": "LKA",
+      "year": 2011,
+      "resid": 4.82
+    },
+    {
+      "case": "LKA",
+      "year": 2012,
+      "resid": 3.29
+    },
+    {
+      "case": "LKA",
+      "year": 2013,
+      "resid": 4.3
+    },
+    {
+      "case": "LKA",
+      "year": 2015,
+      "resid": 5.63
+    },
+    {
+      "case": "LKA",
+      "year": 2018,
+      "resid": 9.69
+    },
+    {
+      "case": "LKA",
+      "year": 2019,
+      "resid": -5.65
+    },
+    {
+      "case": "LKA",
+      "year": 2021,
+      "resid": 4.73
+    },
+    {
+      "case": "LKA",
+      "year": 2022,
+      "resid": 33.5
+    },
+    {
+      "case": "DEU",
+      "year": 2008,
+      "resid": 3.72
+    },
+    {
+      "case": "DEU",
+      "year": 2010,
+      "resid": 8.06
+    },
+    {
+      "case": "DEU",
+      "year": 2012,
+      "resid": 3.23
+    },
+    {
+      "case": "UKR",
+      "year": 2001,
+      "resid": -3.24
+    },
+    {
+      "case": "UKR",
+      "year": 2004,
+      "resid": -3.57
+    },
+    {
+      "case": "UKR",
+      "year": 2005,
+      "resid": -5.49
+    },
+    {
+      "case": "UKR",
+      "year": 2008,
+      "resid": 7.45
+    },
+    {
+      "case": "UKR",
+      "year": 2009,
+      "resid": 7.79
+    },
+    {
+      "case": "UKR",
+      "year": 2010,
+      "resid": 3.58
+    },
+    {
+      "case": "UKR",
+      "year": 2012,
+      "resid": -3.41
+    },
+    {
+      "case": "UKR",
+      "year": 2014,
+      "resid": 27.21
+    },
+    {
+      "case": "UKR",
+      "year": 2015,
+      "resid": 26.79
+    },
+    {
+      "case": "UKR",
+      "year": 2016,
+      "resid": 9.63
+    },
+    {
+      "case": "UKR",
+      "year": 2018,
+      "resid": -3.68
+    },
+    {
+      "case": "UKR",
+      "year": 2019,
+      "resid": -5.51
+    },
+    {
+      "case": "UKR",
+      "year": 2020,
+      "resid": 3.43
+    },
+    {
+      "case": "UKR",
+      "year": 2021,
+      "resid": -8.23
+    },
+    {
+      "case": "UKR",
+      "year": 2022,
+      "resid": 4.44
+    },
+    {
+      "case": "UKR",
+      "year": 2023,
+      "resid": -2.76
+    },
+    {
+      "case": "TUR",
+      "year": 2001,
+      "resid": 34.17
+    },
+    {
+      "case": "TUR",
+      "year": 2002,
+      "resid": 16.1
+    },
+    {
+      "case": "TUR",
+      "year": 2003,
+      "resid": 5.47
+    },
+    {
+      "case": "TUR",
+      "year": 2017,
+      "resid": 2.83
+    },
+    {
+      "case": "TUR",
+      "year": 2018,
+      "resid": 3.71
+    },
+    {
+      "case": "TUR",
+      "year": 2020,
+      "resid": 6.72
+    },
+    {
+      "case": "TUR",
+      "year": 2021,
+      "resid": 7.92
+    },
+    {
+      "case": "TUR",
+      "year": 2022,
+      "resid": 7.83
+    },
+    {
+      "case": "TUR",
+      "year": 2023,
+      "resid": 5.77
+    },
+    {
+      "case": "BRA",
+      "year": 2001,
+      "resid": 7.05
+    },
+    {
+      "case": "BRA",
+      "year": 2002,
+      "resid": 13.02
+    },
+    {
+      "case": "BRA",
+      "year": 2005,
+      "resid": 2.89
+    },
+    {
+      "case": "BRA",
+      "year": 2008,
+      "resid": 2.99
+    },
+    {
+      "case": "BRA",
+      "year": 2012,
+      "resid": 3.3
+    },
+    {
+      "case": "BRA",
+      "year": 2015,
+      "resid": 4.44
+    },
+    {
+      "case": "BRA",
+      "year": 2020,
+      "resid": -2.93
+    },
+    {
+      "case": "PAK",
+      "year": 2001,
+      "resid": 5.91
+    },
+    {
+      "case": "PAK",
+      "year": 2002,
+      "resid": -3.2
+    },
+    {
+      "case": "PAK",
+      "year": 2005,
+      "resid": 3.12
+    },
+    {
+      "case": "PAK",
+      "year": 2008,
+      "resid": 6.32
+    },
+    {
+      "case": "PAK",
+      "year": 2009,
+      "resid": 9.88
+    },
+    {
+      "case": "PAK",
+      "year": 2010,
+      "resid": 3.24
+    },
+    {
+      "case": "PAK",
+      "year": 2016,
+      "resid": 3.26
+    },
+    {
+      "case": "PAK",
+      "year": 2018,
+      "resid": 5.11
+    },
+    {
+      "case": "PAK",
+      "year": 2019,
+      "resid": 11.14
+    },
+    {
+      "case": "PAK",
+      "year": 2022,
+      "resid": 7.54
+    },
+    {
+      "case": "PAK",
+      "year": 2023,
+      "resid": 12.33
+    },
+    {
+      "case": "JPN",
+      "year": 2004,
+      "resid": 6.22
+    },
+    {
+      "case": "JPN",
+      "year": 2014,
+      "resid": 4.09
+    },
+    {
+      "case": "JPN",
+      "year": 2020,
+      "resid": 4.08
+    },
+    {
+      "case": "JPN",
+      "year": 2021,
+      "resid": -4.67
+    },
+    {
+      "case": "JPN",
+      "year": 2022,
+      "resid": 9.16
+    }
+  ]
+}

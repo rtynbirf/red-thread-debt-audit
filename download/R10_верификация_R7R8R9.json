@@ -1,0 +1,68 @@
+{
+  "task": "R10 cross-layer verification of colleague R7/R8/R9",
+  "inputs": {
+    "R7_delta_audit.json": "f376f3e3807554527899c72bc5dcf073ebc6d4cca3645be651caa9cff652d8bc",
+    "R8_robustness_audit.json": "92d7ec5a9e05b57bea8ff6611fc565798db521321be6b58766c0210e61715ffd",
+    "R9_independent_recompute.json": "36a38d1d695ab5ea29345bfdb120e5a1e629425ccec0ddce12f1269ec0c3cb0b",
+    "r7_delta_audit.py": "c2c8f9720e17feae4206b72c166466bd5d934e74d90cc644a8a3c0a1d8bf8c06",
+    "R9_independent_recompute.py": "5a6f73100ebaf45c3521b3f3df702660604714537b412fac104432983716e7d5",
+    "archive_zip": "ff50dcccf787db62964e70f683834f3695046aa6a701e8fde272bc580895f622",
+    "R9_REPORT_md": "59662336ebbc5f6af62d81d63307654f55fadeaf65356fde227a3ee7593ae4ec"
+  },
+  "verdicts": {
+    "VA1_R7_exact": "ПОДТВЕРЖДЕНА",
+    "VA2_R8_full_enumeration": "ПОДТВЕРЖДЕНА",
+    "VA3_cross_consistency": "ПОДТВЕРЖДЕНА",
+    "VA4_strict_penalty_measured": "ЗАФИКСИРОВАН",
+    "VA5_colleague_R9_reproduction": "ПОДТВЕРЖДЕНА"
+  },
+  "details": {
+    "VA1": {
+      "Delta6": "1/3",
+      "Delta11": "6/11",
+      "r_marg": "2/5"
+    },
+    "VA2": {
+      "Delta6": {
+        "R7-v0.1": "1/3",
+        "strict-no-spoof-channel": "1/3",
+        "count-world-partition": "1/2",
+        "count-timing-but-not-spoof-resistance": "1/2"
+      },
+      "Delta11": {
+        "R7-v0.1": "6/11",
+        "strict_no_spoofable_timing": "5/11",
+        "credit_CAU_sal_world_recovery": "7/11"
+      },
+      "r_marg": {
+        "R7-v0.1": "2/5",
+        "strict_non_spoofable": "1/4"
+      }
+    },
+    "VA3": {
+      "mappings": {
+        "axes_survive=3": true,
+        "contact_content=0": true,
+        "contact_perfect_probe=0": true,
+        "contact_timing=1": true,
+        "timing_spoofable=1 (resistance failed)": true,
+        "causal_foreign_coverage=0": true,
+        "causal_law_partition=1": true,
+        "coherence_self_recovery=0": true
+      },
+      "strict_kills_only_bit6_timing_channel": true
+    },
+    "VA4": {
+      "strict_penalty_Delta11_ones": "1/6 = 0.1667",
+      "strict_penalty_r_marg": "3/8 = 0.3750",
+      "note": "spoofable-канал несёт 1 из 6 единиц Delta11 и 1 из 2 маргинальных восстановлений r_marg"
+    }
+  },
+  "error_register_E12": "сравнение повторяющихся десятичных дробей через round(x*1e9) ложно роняет VA2; инструмент верификации обязан сверять точную дробь с допуском 1e-9 (первый прогон дал ложное ОТКЛОНЕНА — исправлено до публикации выводов, промах инструмента ≠ промах данных)",
+  "epistemic": {
+    "FACT": "сохранённые векторы/JSON коллеги, их арифметика, 9 кросс-отображений",
+    "CALCULATED": "strict-штраф: Delta11 -1/6 единиц, r_marg -37.5%",
+    "MODEL": "топологический перенос: spoofable timing (коллега) ~ фиктивная ie в дефолте (v0.2) — канал даёт сигнал, не является доказательством при управляемости",
+    "UNKNOWN": "семантика слотов Delta6 (canonical_notation_found=false); general_minimality (согласовано с R8); мировая причинность (0/8)"
+  }
+}
