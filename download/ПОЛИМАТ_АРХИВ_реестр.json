@@ -1,0 +1,1411 @@
+{
+ "meta": {
+  "python": "3.12.14",
+  "scan_dirs": [
+   "upload/",
+   "download/"
+  ],
+  "pipeline": "FILE → CODE → ALGORITHM → FORMULA → DATA → RESULT → DEPENDENCY → VERSION → FINAL STATE",
+  "evidence_layers": [
+   "FACT",
+   "CALCULATED",
+   "MODEL",
+   "ASSUMPTION",
+   "UNKNOWN"
+  ],
+  "total_bytes": 10421618,
+  "n_files": 75,
+  "note": "каждый токен-счётчик вычислен на живом файле; роли и статусы — из работ задач 1–20 (worklog)"
+ },
+ "files": [
+  {
+   "file": "upload/2. «Должник возобновляется через родильное отделение и запись».md",
+   "bytes": 132067,
+   "sha1": "4fbae52fa1e5",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус: должник через родильное отделение",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "мишарум": 1,
+    "юбилей": 18,
+    "SFA-остаток": 11,
+    "τ-оборот": 4,
+    "аудит-приёмка": 4,
+    "ρ-наследование": 35,
+    "клапаны жизни": 1,
+    "haircut": 8
+   },
+   "n_tokens": 8
+  },
+  {
+   "file": "upload/2. Первый удар по собственной модели- порог 77_.md",
+   "bytes": 60552,
+   "sha1": "e3d445677b69",
+   "type": "text",
+   "executable_python": false,
+   "role": "снятие порога 77% Полиматом",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 2,
+    "A_crit три зоны": 3,
+    "9 звеньев": 4,
+    "мишарум": 1,
+    "юбилей": 2,
+    "SFA-остаток": 6,
+    "периметр": 6,
+    "аудит-приёмка": 11,
+    "клапаны жизни": 5,
+    "допуск κ": 1,
+    "§48/пауза": 2,
+    "haircut": 1
+   },
+   "n_tokens": 12
+  },
+  {
+   "file": "upload/Batch.txt",
+   "bytes": 59410,
+   "sha1": "c068e55afd03",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус: сверхдлинные строки, прецедент Rust→Python-порта",
+   "evidence_status": "MODEL/ASSUMPTION",
+   "algorithm_tokens": {
+    "A_crit": 3,
+    "A_crit три зоны": 2,
+    "9 звеньев": 9,
+    "мишарум": 13,
+    "юбилей": 6,
+    "клапаны жизни": 6,
+    "допуск κ": 3,
+    "§48/пауза": 5,
+    "haircut": 6
+   },
+   "n_tokens": 9
+  },
+  {
+   "file": "upload/ChatGP567T.md",
+   "bytes": 9620,
+   "sha1": "4266cb1904b8",
+   "type": "text",
+   "executable_python": false,
+   "role": "план ПОЛИМАТ-АРХИВА + класс ошибок «подмена объекта аудита»",
+   "evidence_status": "MODEL (план исполнен здесь)",
+   "algorithm_tokens": {
+    "аудит-приёмка": 3
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "upload/Grok.md",
+   "bytes": 138037,
+   "sha1": "ac9c1062ed22",
+   "type": "text",
+   "executable_python": false,
+   "role": "разбор сторонней моделью: 22 звена, DLV-спека",
+   "evidence_status": "MODEL (4 гипотезы исполнены в v4.3)",
+   "algorithm_tokens": {
+    "юбилей": 1,
+    "SFA-остаток": 1,
+    "ρ-наследование": 11,
+    "haircut": 1
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "upload/Pasted Content_1788790250040.txt",
+   "bytes": 70211,
+   "sha1": "12133e72e983",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус: вставка 1 (Сенегал R0–R11)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "9 звеньев": 2,
+    "мишарум": 15,
+    "юбилей": 3,
+    "SFA-остаток": 2,
+    "аудит-приёмка": 1,
+    "клапаны жизни": 7,
+    "допуск κ": 1,
+    "§48/пауза": 1,
+    "haircut": 5
+   },
+   "n_tokens": 9
+  },
+  {
+   "file": "upload/Pasted Content_1788868904028.txt",
+   "bytes": 52977,
+   "sha1": "bf7a855dfe93",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус: вставка 2 (задачи Полимата)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 2,
+    "A_crit три зоны": 3,
+    "9 звеньев": 3,
+    "мишарум": 1,
+    "юбилей": 2,
+    "SFA-остаток": 3,
+    "аудит-приёмка": 4,
+    "клапаны жизни": 1,
+    "допуск κ": 1,
+    "§48/пауза": 2,
+    "haircut": 9
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "upload/Pasted Content_1788869197879.txt",
+   "bytes": 50750,
+   "sha1": "16ccf6e07a3a",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус: вставка 3 (задачи Полимата)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 4,
+    "мишарум": 6,
+    "кворум": 1,
+    "аудит-приёмка": 5,
+    "ρ-наследование": 2,
+    "голод": 1,
+    "§48/пауза": 4,
+    "haircut": 28
+   },
+   "n_tokens": 8
+  },
+  {
+   "file": "upload/RENTA.txt",
+   "bytes": 788592,
+   "sha1": "5632c0a9dfa5",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус диалогов ЛЛМ (26 секций), теория долга-ренты",
+   "evidence_status": "MODEL/ASSUMPTION",
+   "algorithm_tokens": {
+    "9 звеньев": 9,
+    "мишарум": 28,
+    "юбилей": 90,
+    "кворум": 4,
+    "SFA-остаток": 13,
+    "периметр": 3,
+    "аудит-приёмка": 1,
+    "клапаны жизни": 71,
+    "допуск κ": 8,
+    "голод": 2,
+    "§48/пауза": 91,
+    "haircut": 117,
+    "порог i*": 9
+   },
+   "n_tokens": 13
+  },
+  {
+   "file": "upload/RENTA_1.txt",
+   "bytes": 668042,
+   "sha1": "61c8d9d99b0c",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус диалогов ЛЛМ (12 сегментов)",
+   "evidence_status": "MODEL/ASSUMPTION",
+   "algorithm_tokens": {
+    "9 звеньев": 24,
+    "мишарум": 62,
+    "юбилей": 49,
+    "кворум": 1,
+    "SFA-остаток": 9,
+    "периметр": 1,
+    "клапаны жизни": 81,
+    "допуск κ": 25,
+    "§48/пауза": 37,
+    "haircut": 72,
+    "порог i*": 9
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "upload/Red_Thread_Audit_v0_1.py",
+   "bytes": 4150,
+   "sha1": "9c6ad70ca4eb",
+   "type": "python",
+   "executable_python": true,
+   "role": "граф v0.1 d[t+1]=((1+r)/(1+g))d−pb",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 2,
+    "haircut": 11
+   },
+   "n_tokens": 2
+  },
+  {
+   "file": "upload/Red_Thread_Audit_v0_1_REPORT.md",
+   "bytes": 6874,
+   "sha1": "21f13224262f",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.1 (отчёт)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 2,
+    "haircut": 5
+   },
+   "n_tokens": 2
+  },
+  {
+   "file": "upload/Red_Thread_Audit_v0_1_results.csv",
+   "bytes": 2261,
+   "sha1": "72a3fbedc684",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.1 (данные)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "haircut": 21
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "upload/Red_Thread_Debt_Rent_Chain (1).pdf",
+   "bytes": 120086,
+   "sha1": "7447b0c9530b",
+   "type": "binary",
+   "executable_python": false,
+   "role": "бинарный контейнер корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "upload/debt_pit_report-v2.md",
+   "bytes": 9851,
+   "sha1": "ce5f0b83f6a8",
+   "type": "text",
+   "executable_python": false,
+   "role": "отчёт песочницы v2 (A_crit, 3 зоны)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 3,
+    "A_crit три зоны": 3,
+    "9 звеньев": 2,
+    "мишарум": 1,
+    "юбилей": 2,
+    "клапаны жизни": 1,
+    "допуск κ": 1,
+    "§48/пауза": 2,
+    "haircut": 1
+   },
+   "n_tokens": 9
+  },
+  {
+   "file": "upload/debt_pit_report.md",
+   "bytes": 1997,
+   "sha1": "7fc6bdbc41fa",
+   "type": "text",
+   "executable_python": false,
+   "role": "отчёт песочницы v1",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "9 звеньев": 1
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "upload/programmable-misharum-spec.md",
+   "bytes": 27775,
+   "sha1": "cfa28497cf16",
+   "type": "text",
+   "executable_python": false,
+   "role": "спека программируемого мишарума",
+   "evidence_status": "ASSUMPTION",
+   "algorithm_tokens": {
+    "A_crit": 1,
+    "9 звеньев": 3,
+    "мишарум": 20,
+    "юбилей": 11,
+    "клапаны жизни": 5,
+    "допуск κ": 1,
+    "§48/пауза": 4,
+    "haircut": 11,
+    "порог i*": 1
+   },
+   "n_tokens": 9
+  },
+  {
+   "file": "upload/red_string_available_files_2026-09-08.zip",
+   "bytes": 468872,
+   "sha1": "1ae1b4132621",
+   "type": "binary",
+   "executable_python": false,
+   "role": "бинарный контейнер корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "upload/ЗАДАЧА ПОЛИМАТА.md",
+   "bytes": 51814,
+   "sha1": "d0c8a11fd12c",
+   "type": "text",
+   "executable_python": false,
+   "role": "задачи v0.2/v0.4/R7 от Полимата",
+   "evidence_status": "ASSUMPTION",
+   "algorithm_tokens": {
+    "A_crit": 2,
+    "A_crit три зоны": 3,
+    "9 звеньев": 3,
+    "мишарум": 1,
+    "юбилей": 2,
+    "SFA-остаток": 3,
+    "аудит-приёмка": 4,
+    "клапаны жизни": 1,
+    "допуск κ": 1,
+    "§48/пауза": 2,
+    "haircut": 9
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "upload/КРАСНАЯ_НИТЬ_СВЯЗКА.md",
+   "bytes": 27271,
+   "sha1": "40cf00771d51",
+   "type": "text",
+   "executable_python": false,
+   "role": "связка красной нити",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 7,
+    "λ25": 2,
+    "аудит-приёмка": 22,
+    "ρ-наследование": 1
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "upload/ОТВЕТ_ЧАМБЕРЛЕНУ_раунд_4.md",
+   "bytes": 29396,
+   "sha1": "a5fe0811e18f",
+   "type": "text",
+   "executable_python": false,
+   "role": "ответ коллеге (раунд 4)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "λ25": 3,
+    "юбилей": 7,
+    "τ-оборот": 7,
+    "аудит-приёмка": 1,
+    "ρ-наследование": 12,
+    "haircut": 1
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "upload/ОТЧЁТ v0.2.md",
+   "bytes": 95103,
+   "sha1": "f1bf3da29a62",
+   "type": "text",
+   "executable_python": false,
+   "role": "Сенегал R0–R11, РФ-прогноз 2026–2032",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 2,
+    "A_crit три зоны": 3,
+    "9 звеньев": 3,
+    "мишарум": 1,
+    "юбилей": 2,
+    "SFA-остаток": 4,
+    "аудит-приёмка": 7,
+    "клапаны жизни": 12,
+    "допуск κ": 1,
+    "§48/пауза": 2,
+    "haircut": 3
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "upload/Синтезировать структуру алгоритма.md",
+   "bytes": 198890,
+   "sha1": "6cec629858ea",
+   "type": "text",
+   "executable_python": false,
+   "role": "корпус синтеза структуры",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 3,
+    "9 звеньев": 1,
+    "λ25": 4,
+    "мишарум": 2,
+    "юбилей": 30,
+    "SFA-остаток": 14,
+    "τ-оборот": 14,
+    "аудит-приёмка": 8,
+    "ρ-наследование": 41,
+    "клапаны жизни": 2,
+    "haircut": 15
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "upload/✅ ЕДИНЫЙ СПИСОК.md",
+   "bytes": 67014,
+   "sha1": "9e37a7886643",
+   "type": "text",
+   "executable_python": false,
+   "role": "единый список артефактов (вербальный)",
+   "evidence_status": "MODEL (машинная версия = этот реестр)",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/ACRIT_Аудит_Полимата_v1.py",
+   "bytes": 17310,
+   "sha1": "c12099ac3aa1",
+   "type": "python",
+   "executable_python": true,
+   "role": "исполнение A_crit-таблицы Полимата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 12,
+    "аудит-приёмка": 4
+   },
+   "n_tokens": 2
+  },
+  {
+   "file": "download/ACRIT_Аудит_Полимата_v1_результаты.json",
+   "bytes": 3970,
+   "sha1": "7198d9e43724",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит A_crit (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 1
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "download/ACRIT_Аудит_Полимата_v1_таблица_Полимата.png",
+   "bytes": 200243,
+   "sha1": "cca2baf34dc9",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика аудита A_crit",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/README.md",
+   "bytes": 34,
+   "sha1": "2a2c78f9ba43",
+   "type": "text",
+   "executable_python": false,
+   "role": "описание деливераблов",
+   "evidence_status": "FACT",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/RENTA_песочница_график.png",
+   "bytes": 264828,
+   "sha1": "5464c4027a5b",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/RENTA_песочница_протокол_исполнения.md",
+   "bytes": 9700,
+   "sha1": "be0064b507d4",
+   "type": "text",
+   "executable_python": false,
+   "role": "документ корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 8,
+    "мишарум": 1,
+    "§48/пауза": 2
+   },
+   "n_tokens": 3
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_2.png",
+   "bytes": 330166,
+   "sha1": "a013eaba335d",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_2.py",
+   "bytes": 14901,
+   "sha1": "3f5c99acd529",
+   "type": "python",
+   "executable_python": true,
+   "role": "аудит v0.2: живые API, SFA-разложение",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 1,
+    "макрограф r-g-pb": 13,
+    "SFA-остаток": 5,
+    "haircut": 1
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_2_REPORT.md",
+   "bytes": 10920,
+   "sha1": "8e9988a44cde",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.2 (отчёт)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 2,
+    "SFA-остаток": 4,
+    "r_gap/репрайсинг": 1,
+    "аудит-приёмка": 1,
+    "haircut": 10
+   },
+   "n_tokens": 5
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_2_results.csv",
+   "bytes": 9292,
+   "sha1": "c13c11b8fe22",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.2 (данные)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 1,
+    "SFA-остаток": 1
+   },
+   "n_tokens": 2
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_4.png",
+   "bytes": 275615,
+   "sha1": "dee7b34f4d8a",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_4.py",
+   "bytes": 24506,
+   "sha1": "4855b2b9f48f",
+   "type": "python",
+   "executable_python": true,
+   "role": "аудит v0.4: RUS/USA/CHN/EUR, r_gap, периметр, частное/ядро",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 6,
+    "SFA-остаток": 14,
+    "r_gap/репрайсинг": 8,
+    "периметр": 16
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_4_REPORT.md",
+   "bytes": 17860,
+   "sha1": "4e176291df8e",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.4 (отчёт)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "макрограф r-g-pb": 2,
+    "SFA-остаток": 2,
+    "r_gap/репрайсинг": 11,
+    "периметр": 20
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_4_results.csv",
+   "bytes": 7201,
+   "sha1": "8731ac620b31",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.4 (данные)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "SFA-остаток": 1
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "download/Red_Thread_Audit_v0_4_summary.json",
+   "bytes": 2858,
+   "sha1": "684b74868503",
+   "type": "text",
+   "executable_python": false,
+   "role": "аудит v0.4 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "SFA-остаток": 1,
+    "r_gap/репрайсинг": 1,
+    "периметр": 1
+   },
+   "n_tokens": 3
+  },
+  {
+   "file": "download/АЛГОРИТМ_СТРУКТУРЫ_ПОЛНЫЙ_СИНТЕЗ.md",
+   "bytes": 88533,
+   "sha1": "087ecb3def32",
+   "type": "text",
+   "executable_python": false,
+   "role": "полный синтез структуры алгоритма",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 17,
+    "A_crit три зоны": 3,
+    "9 звеньев": 12,
+    "мишарум": 22,
+    "юбилей": 12,
+    "SFA-остаток": 6,
+    "клапаны жизни": 24,
+    "допуск κ": 6,
+    "§48/пауза": 20,
+    "haircut": 15,
+    "порог i*": 4
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "download/ГРАМОТНОСТЬ_ПО_ВЕКАМ.png",
+   "bytes": 292097,
+   "sha1": "91a770d7afe3",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/ЕДИНОЕ_КОЛЬЦО_ответ_Чамберлену.png",
+   "bytes": 2176003,
+   "sha1": "f2024493164c",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/ЕДИНОЕ_КОЛЬЦО_первичный_документ.md",
+   "bytes": 32765,
+   "sha1": "2fa3dd97a009",
+   "type": "text",
+   "executable_python": false,
+   "role": "документ корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 1,
+    "мишарум": 1,
+    "юбилей": 3,
+    "SFA-остаток": 1,
+    "ρ-наследование": 9,
+    "haircut": 2
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/ЗЁРНА_И_ПЛЕВЕЛ_разбор_фантазёра.md",
+   "bytes": 28180,
+   "sha1": "bfdaac10c9df",
+   "type": "text",
+   "executable_python": false,
+   "role": "документ корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "9 звеньев": 1,
+    "мишарум": 6,
+    "юбилей": 2,
+    "клапаны жизни": 3,
+    "допуск κ": 2,
+    "haircut": 4
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/КОЛЬЦО-1.py",
+   "bytes": 9385,
+   "sha1": "3f1170fdf832",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v1: рождение машины",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 10,
+    "юбилей": 12,
+    "DEFR/бедствие": 6,
+    "ρ-наследование": 16
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v2.py",
+   "bytes": 21436,
+   "sha1": "2d64df4adec5",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v2: абляция и родословная",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 14,
+    "юбилей": 14,
+    "DEFR/бедствие": 5,
+    "τ-оборот": 2,
+    "аудит-приёмка": 2,
+    "ρ-наследование": 23,
+    "голод": 1
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v2_абляция_и_родословная.png",
+   "bytes": 161944,
+   "sha1": "bab02eea4737",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v2_временные_ряды.csv",
+   "bytes": 181218,
+   "sha1": "cfff678492e4",
+   "type": "text",
+   "executable_python": false,
+   "role": "временные ряды кольца v2",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "юбилей": 300
+   },
+   "n_tokens": 1
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v2_результаты.json",
+   "bytes": 23644,
+   "sha1": "652e1887bd76",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v2 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 12,
+    "юбилей": 2,
+    "DEFR/бедствие": 11,
+    "ρ-наследование": 3
+   },
+   "n_tokens": 4
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v3.py",
+   "bytes": 25706,
+   "sha1": "492e7b463c9b",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v3: приёмка и оборот",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 10,
+    "юбилей": 6,
+    "DEFR/бедствие": 5,
+    "τ-оборот": 20,
+    "аудит-приёмка": 23,
+    "ρ-наследование": 17
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v3_временные_ряды.csv",
+   "bytes": 166907,
+   "sha1": "98f90b78b552",
+   "type": "text",
+   "executable_python": false,
+   "role": "временные ряды кольца v3",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v3_приёмка_и_оборот.png",
+   "bytes": 164193,
+   "sha1": "4b88c7949f1c",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v3_результаты.json",
+   "bytes": 22816,
+   "sha1": "5494f2dc1e90",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v3 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 10,
+    "юбилей": 1,
+    "DEFR/бедствие": 9,
+    "τ-оборот": 3,
+    "аудит-приёмка": 2,
+    "ρ-наследование": 2
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4.py",
+   "bytes": 24028,
+   "sha1": "51a4692893b4",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v4: смертность и алгоноситель",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 15,
+    "юбилей": 9,
+    "DEFR/бедствие": 5,
+    "τ-оборот": 5,
+    "аудит-приёмка": 5,
+    "ρ-наследование": 16,
+    "клапаны жизни": 5
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_2.py",
+   "bytes": 26254,
+   "sha1": "406db0801e39",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v4.2: дарение и сытость (клапаны)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 20,
+    "юбилей": 4,
+    "DEFR/бедствие": 5,
+    "τ-оборот": 5,
+    "аудит-приёмка": 2,
+    "ρ-наследование": 14,
+    "клапаны жизни": 54
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_2_дарение_и_сытость.png",
+   "bytes": 121025,
+   "sha1": "1d36b93c359f",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_2_результаты.json",
+   "bytes": 8369,
+   "sha1": "c4f8852fd6ef",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v4.2 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 9,
+    "DEFR/бедствие": 8,
+    "клапаны жизни": 8
+   },
+   "n_tokens": 3
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_3.py",
+   "bytes": 29663,
+   "sha1": "24bfb72947a5",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v4.3: мишарум-триггер, пауза, кворум, порог i*",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 25,
+    "мишарум": 10,
+    "юбилей": 24,
+    "кворум": 23,
+    "DEFR/бедствие": 21,
+    "τ-оборот": 14,
+    "аудит-приёмка": 21,
+    "ρ-наследование": 20,
+    "§48/пауза": 23,
+    "haircut": 19,
+    "порог i*": 8
+   },
+   "n_tokens": 11
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_3_мишарум_и_кворум.png",
+   "bytes": 143943,
+   "sha1": "8b55a2e7838e",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_3_результаты.json",
+   "bytes": 11004,
+   "sha1": "c88aca7a5478",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v4.3 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 16,
+    "кворум": 2,
+    "DEFR/бедствие": 17,
+    "аудит-приёмка": 3,
+    "§48/пауза": 2,
+    "порог i*": 1
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_временные_ряды.csv",
+   "bytes": 153611,
+   "sha1": "d7b253b320c1",
+   "type": "text",
+   "executable_python": false,
+   "role": "временные ряды кольца v4",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_результаты.json",
+   "bytes": 8453,
+   "sha1": "24d17d8e2bef",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v4 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "λ25": 10,
+    "юбилей": 2,
+    "DEFR/бедствие": 9,
+    "аудит-приёмка": 1,
+    "ρ-наследование": 2
+   },
+   "n_tokens": 5
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v4_смертность_и_алгоноситель.png",
+   "bytes": 153494,
+   "sha1": "21e9636f6b15",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v5_девять_звеньев.png",
+   "bytes": 270190,
+   "sha1": "b9a7313b4f35",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика v5.0",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v5_единый_механизм.py",
+   "bytes": 42368,
+   "sha1": "54138a568512",
+   "type": "python",
+   "executable_python": true,
+   "role": "кольцо v5.0: ЕДИНЫЙ МЕХАНИЗМ — слои 0–3, 9 звеньев, SFA-контроль, допуск κ",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 10,
+    "9 звеньев": 2,
+    "макрограф r-g-pb": 2,
+    "λ25": 13,
+    "юбилей": 11,
+    "кворум": 10,
+    "DEFR/бедствие": 14,
+    "SFA-остаток": 18,
+    "τ-оборот": 6,
+    "аудит-приёмка": 6,
+    "ρ-наследование": 13,
+    "допуск κ": 13,
+    "голод": 29,
+    "§48/пауза": 7,
+    "haircut": 8
+   },
+   "n_tokens": 15
+  },
+  {
+   "file": "download/КОЛЬЦО-1_v5_результаты.json",
+   "bytes": 24833,
+   "sha1": "16401985f341",
+   "type": "text",
+   "executable_python": false,
+   "role": "кольцо v5.0 (сводка)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 1,
+    "λ25": 9,
+    "кворум": 1,
+    "DEFR/бедствие": 8,
+    "SFA-остаток": 6,
+    "аудит-приёмка": 8,
+    "допуск κ": 2,
+    "голод": 21,
+    "§48/пауза": 1,
+    "haircut": 8
+   },
+   "n_tokens": 10
+  },
+  {
+   "file": "download/КОЛЬЦО-1_результаты.png",
+   "bytes": 175649,
+   "sha1": "39f261f77cc1",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/ОТВЕТ_ЧАМБЕРЛЕНУ_раунд_3.md",
+   "bytes": 30453,
+   "sha1": "1514dbe4c674",
+   "type": "text",
+   "executable_python": false,
+   "role": "ответ коллеге (раунд 3)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "юбилей": 9,
+    "SFA-остаток": 2,
+    "τ-оборот": 1,
+    "аудит-приёмка": 2,
+    "ρ-наследование": 19,
+    "клапаны жизни": 1,
+    "haircut": 1
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/ОТВЕТ_ЧАМБЕРЛЕНУ_раунд_4.md",
+   "bytes": 29396,
+   "sha1": "a5fe0811e18f",
+   "type": "text",
+   "executable_python": false,
+   "role": "ответ коллеге (раунд 4)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "λ25": 3,
+    "юбилей": 7,
+    "τ-оборот": 7,
+    "аудит-приёмка": 1,
+    "ρ-наследование": 12,
+    "haircut": 1
+   },
+   "n_tokens": 6
+  },
+  {
+   "file": "download/ОТВЕТ_ЧАМБЕРЛЕНУ_раунд_5.md",
+   "bytes": 18731,
+   "sha1": "102b02e98000",
+   "type": "text",
+   "executable_python": false,
+   "role": "ответ коллеге (раунд 5)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "τ-оборот": 7,
+    "аудит-приёмка": 29
+   },
+   "n_tokens": 2
+  },
+  {
+   "file": "download/ОТВЕТ_ЧАМБЕРЛЕНУ_раунд_6.md",
+   "bytes": 20680,
+   "sha1": "12a4ca340a8f",
+   "type": "text",
+   "executable_python": false,
+   "role": "ответ коллеге (раунд 6)",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "A_crit": 5,
+    "λ25": 1,
+    "юбилей": 4,
+    "τ-оборот": 1,
+    "аудит-приёмка": 9,
+    "ρ-наследование": 1,
+    "клапаны жизни": 5
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/ПОЛИМАТ_АРХИВ_реестр.json",
+   "bytes": 39509,
+   "sha1": "dc0427dcf16f",
+   "type": "text",
+   "executable_python": false,
+   "role": "этот реестр (машинная инвентаризация)",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {
+    "A_crit": 38,
+    "макрограф r-g-pb": 2,
+    "λ25": 20,
+    "мишарум": 26,
+    "юбилей": 34,
+    "кворум": 13,
+    "DEFR/бедствие": 15,
+    "SFA-остаток": 27,
+    "r_gap/репрайсинг": 14,
+    "периметр": 11,
+    "τ-оборот": 17,
+    "аудит-приёмка": 86,
+    "клапаны жизни": 31,
+    "допуск κ": 18,
+    "голод": 7,
+    "§48/пауза": 42,
+    "haircut": 32,
+    "порог i*": 10
+   },
+   "n_tokens": 18
+  },
+  {
+   "file": "download/СТРУКТУРА_АЛГОРИТМА_долговая_яма_равно_рента.md",
+   "bytes": 49893,
+   "sha1": "68d435ecb34d",
+   "type": "text",
+   "executable_python": false,
+   "role": "документ корпуса",
+   "evidence_status": "MODEL",
+   "algorithm_tokens": {
+    "9 звеньев": 5,
+    "мишарум": 8,
+    "юбилей": 8,
+    "клапаны жизни": 10,
+    "допуск κ": 3,
+    "§48/пауза": 7,
+    "haircut": 11
+   },
+   "n_tokens": 7
+  },
+  {
+   "file": "download/ЦИКЛ_МАШИНЫ_карта.png",
+   "bytes": 1083905,
+   "sha1": "7e1a2be33268",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  },
+  {
+   "file": "download/ЦИКЛ_МАШИНЫ_образ.png",
+   "bytes": 230324,
+   "sha1": "62bcef7cc2e0",
+   "type": "binary",
+   "executable_python": false,
+   "role": "графика результата",
+   "evidence_status": "CALCULATED",
+   "algorithm_tokens": {},
+   "n_tokens": 0
+  }
+ ],
+ "token_totals": {
+  "юбилей": 689,
+  "haircut": 436,
+  "клапаны жизни": 334,
+  "аудит-приёмка": 276,
+  "ρ-наследование": 269,
+  "§48/пауза": 256,
+  "мишарум": 226,
+  "λ25": 206,
+  "SFA-остаток": 154,
+  "DEFR/бедствие": 138,
+  "A_crit": 123,
+  "τ-оборот": 113,
+  "допуск κ": 87,
+  "9 звеньев": 84,
+  "голод": 61,
+  "периметр": 58,
+  "кворум": 55,
+  "порог i*": 42,
+  "r_gap/репрайсинг": 35,
+  "макрограф r-g-pb": 32,
+  "A_crit три зоны": 20
+ },
+ "development_graph": [
+  {
+   "task": "T1",
+   "stage": "корпус 6 файлов → вербатим-карты, Rust→Python песочница"
+  },
+  {
+   "task": "T2",
+   "stage": "структура алгоритма «долговая яма = рента»"
+  },
+  {
+   "task": "T3",
+   "stage": "грамотность по векам, пенсионный конфиск"
+  },
+  {
+   "task": "T4",
+   "stage": "кольцо v1: рождение машины"
+  },
+  {
+   "task": "T5",
+   "stage": "кольцо v2: абляция, родословная"
+  },
+  {
+   "task": "T6",
+   "stage": "кольцо v3: приёмка и оборот (τ)"
+  },
+  {
+   "task": "T7",
+   "stage": "единое кольцо, ответ Чамберлену"
+  },
+  {
+   "task": "T8",
+   "stage": "кольцо v4: смертность, алгоноситель"
+  },
+  {
+   "task": "T9",
+   "stage": "кольцо v4.2: клапаны жизни (дарение/сытость), закон ЧАСТИ"
+  },
+  {
+   "task": "T10",
+   "stage": "аудит v0.1: граф r-g-pb, кейсы GRC/ARG/ZMB/LKA"
+  },
+  {
+   "task": "T11",
+   "stage": "аудит v0.2: живые API, SFA-разложение, дефект дефолта"
+  },
+  {
+   "task": "T12",
+   "stage": "v0.3 объявлен (ex-ante операторы)"
+  },
+  {
+   "task": "T13",
+   "stage": "задачи Полимата: порог 77%, периметр"
+  },
+  {
+   "task": "T14",
+   "stage": "задача v0.2 Полимата: реальные данные через граф"
+  },
+  {
+   "task": "T15",
+   "stage": "раунд 8–9: разбор коллеги, КРАСНАЯ_НИТЬ_СВЯЗКА"
+  },
+  {
+   "task": "T16",
+   "stage": "кольцо v4.2+дарение (раунд 10)"
+  },
+  {
+   "task": "T17",
+   "stage": "кольцо v4.3: мишарум-триггер, пауза, кворум, порог i*"
+  },
+  {
+   "task": "T18",
+   "stage": "аудит v0.2 исполнен (120 строк, 4 кейса)"
+  },
+  {
+   "task": "T19",
+   "stage": "аудит v0.4: большая четвёрка, r_gap, периметр, walk-forward"
+  },
+  {
+   "task": "T20",
+   "stage": "этот раунд: архив Полимата разобран, A_crit исполнен, v5.0 единый механизм, ПОЛИМАТ-АРХИВ"
+  }
+ ],
+ "error_registry": [
+  {
+   "id": "E1",
+   "name": "Подмена объекта аудита собственной реализацией",
+   "source": "ChatGP567T.md (словарь Полимата)",
+   "rule": "аудит сверяет исходный КОНТРАКТ, не новую реализацию"
+  },
+  {
+   "id": "E2",
+   "name": "Откат к пройденному этапу спора",
+   "source": "ChatGPT.md (ответ на старую постановку вместо последней)",
+   "rule": "вывод строится от последнего состояния, не от старого"
+  },
+  {
+   "id": "E3",
+   "name": "Декоративные числа",
+   "source": "таблица A_crit Полимата (P2–P5); DLV-формулы коллеги",
+   "rule": "число без прогона = MODEL, не FACT; публикация остатков как есть"
+  },
+  {
+   "id": "E4",
+   "name": "Void-блок (аудит без дефектов)",
+   "source": "v4.3: tau_t выключен → казни только годных; отозван и перезапущен",
+   "rule": "условие теста проверяется по составу дефектов ДО сравнения"
+  },
+  {
+   "id": "E5",
+   "name": "Юнит-баг единиц измерения",
+   "source": "v0.2: рост в процентах вместо доли (пойман по CSV-диагностике)",
+   "rule": "юнит-тест единиц до прогона"
+  },
+  {
+   "id": "E6",
+   "name": "Лаг потоков в тождестве перехода",
+   "source": "v5.0 VOID-A: SH/POOL тика t−1 вместо t",
+   "rule": "тождество привязывается к тикам потоков, не к индексам"
+  },
+  {
+   "id": "E7",
+   "name": "Вырожденный оператор",
+   "source": "v5.0 VOID-B: ёмкость допуска от «излишка» = 0 у нуждающегося",
+   "rule": "оператор проверяется на нетривиальность (ненулевой ход на обоих режимах) до испытаний"
+  },
+  {
+   "id": "E8",
+   "name": "Неверный скоуп предрегистрации",
+   "source": "v5.0 P6: «все звенья в базе» вместо «в системе конфигов»",
+   "rule": "предрегистрация скоупится по системе конфигов, не по одному"
+  }
+ ],
+ "nine_links_measured": {
+  "L1 ДЕФИЦИТ": "Σshort, тики нуждающихся (v5.0: 40 620 тиков)",
+  "L2 ПОСЕВ": "лоты созданы, p0 (v5.0: 40 620 лотов)",
+  "L3 ЭКСПОНЕНТА": "Σначислено (v5.0: 1.18e12)",
+  "L4 ЗАЛОГ": "покрытие Σmin(s,d)/Σd (v5.0: 1.9% среднее)",
+  "L5 КАПИТУЛЯЦИЯ": "ролловеры (v5.0: 37 384 события)",
+  "L6 ИЗЪЯТИЕ": "казни аудита (v5.0 кворум: улов/ложные)",
+  "L7 КОНВЕРСИЯ": "пул ренты E/Y, сломанные живые",
+  "L8 НАСЛЕДОВАНИЕ": "переходы долга (v5.0: 108 622)",
+  "L9 СБРОС": "сбросы (v5.0 юб30: 10, списано 91.8% p0)"
+ }
+}
