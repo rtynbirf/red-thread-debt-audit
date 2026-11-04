@@ -1,0 +1,363 @@
+{
+ "meta": {
+  "python": "3.12.14",
+  "numpy": "2.1.3",
+  "seed": 7,
+  "lambda_definition": "λ25 = exp(25·slope log(D+1)), T=300",
+  "status": "E — исполнение упрёка заказчика (раунд 7)",
+  "preregistered": [
+   "P1 сытость закрывает старостный клапан, λ↓",
+   "P2 дарение гасит дефицит молодёжи до займа, λ↓",
+   "P3 дед < каждой по отдельности",
+   "P4 ALGO+дарение: gift_total=0 (мёртв по построению)"
+  ],
+  "new_channels_vs_v4": [
+   "satiate: потребность 1.0→0.5·subsist после 65",
+   "gift: g_frac=0.25 излишка (s>140, age≥60) вниз, age<30, пропорционально дефициту, до займа",
+   "предельные: g_frac=1.0, s_keep=70"
+  ],
+  "lambda_floor": "λ_пол = 1.06^25 = 4.29 — сток растёт процентом; клапаны жизни (рождение/старость/дарение) = премия над полом",
+  "reproducibility": "базовый прогон = v4 A_u_жизньx1 (rng не тронут)"
+ },
+ "runs": {
+  "A_u_база": {
+   "lam": 4.585096118130804,
+   "D_over_Y": 112917364.7399868,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.855,
+   "gini": 0.9166983582222845,
+   "pool_over_Y": 0.036105123212000094,
+   "n_deaths": 1293,
+   "n_lots_end": 37234,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 0.0,
+   "gift_covered": 0.0,
+   "gift_covered_share": 0.0,
+   "vol_share": {
+    "young": 0.14326530352097344,
+    "prime": 0.5580223248251662,
+    "old": 0.2987123716538603
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_сытость": {
+   "lam": 4.575801071042937,
+   "D_over_Y": 105449958.78028996,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.825,
+   "gini": 0.8996890444281569,
+   "pool_over_Y": 0.03188305448238427,
+   "n_deaths": 1293,
+   "n_lots_end": 35379,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 0.0,
+   "gift_covered": 0.0,
+   "gift_covered_share": 0.0,
+   "vol_share": {
+    "young": 0.14989302514903197,
+    "prime": 0.5896022844242885,
+    "old": 0.26050469042667956
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_дарение": {
+   "lam": 4.584389334958379,
+   "D_over_Y": 119219232.21849382,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.915,
+   "gini": 0.9929350887468199,
+   "pool_over_Y": 0.032922824330621006,
+   "n_deaths": 1293,
+   "n_lots_end": 38369,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 45232.9609140364,
+   "gift_covered": 44978.53599078906,
+   "gift_covered_share": 0.23523036248852275,
+   "vol_share": {
+    "young": 0.12537616250036407,
+    "prime": 0.5665481609861136,
+    "old": 0.3080756765135222
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_дед": {
+   "lam": 4.575169918423707,
+   "D_over_Y": 108057043.7077182,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.86,
+   "gini": 0.9764633564087855,
+   "pool_over_Y": 0.029267818012929735,
+   "n_deaths": 1293,
+   "n_lots_end": 35785,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 44325.008657826766,
+   "gift_covered": 44325.008657826766,
+   "gift_covered_share": 0.24490439116573404,
+   "vol_share": {
+    "young": 0.13050785848736796,
+    "prime": 0.5990800129532691,
+    "old": 0.270412128559363
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_дар_макс": {
+   "lam": 4.58419808875685,
+   "D_over_Y": 123663587.10140164,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.97,
+   "gini": 0.994872733319529,
+   "pool_over_Y": 0.03504425138975749,
+   "n_deaths": 1293,
+   "n_lots_end": 39438,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 41566.5611308274,
+   "gift_covered": 28566.59375565662,
+   "gift_covered_share": 0.1509001165451177,
+   "vol_share": {
+    "young": 0.13229819174808308,
+    "prime": 0.5664622987413868,
+    "old": 0.3012395095105301
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_дед_макс": {
+   "lam": 4.574615602424607,
+   "D_over_Y": 115939191.63788192,
+   "n_crisis": 283,
+   "first_crisis": 17,
+   "defr_end": 0.94,
+   "gini": 0.9938907944747468,
+   "pool_over_Y": 0.03031111983376643,
+   "n_deaths": 1293,
+   "n_lots_end": 37117,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 38553.490042827776,
+   "gift_covered": 32012.1786189263,
+   "gift_covered_share": 0.17688922987143887,
+   "vol_share": {
+    "young": 0.13585446902674622,
+    "prime": 0.5991970064778932,
+    "old": 0.2649485244953605
+   },
+   "pop_share": {
+    "young": 0.13058333333333327,
+    "prime": 0.6519499999999997,
+    "old": 0.21746666666666675
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 652,
+    "им": 641
+   }
+  },
+  "A_u_ALGO": {
+   "lam": 4.553195053614841,
+   "D_over_Y": 50659141.812741496,
+   "n_crisis": 280,
+   "first_crisis": 20,
+   "defr_end": 0.3,
+   "gini": 0.6249420738865813,
+   "pool_over_Y": 0.0013339004219227652,
+   "n_deaths": 0,
+   "n_lots_end": 16486,
+   "max_carrier_depth": 0,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 0.0,
+   "gift_covered": 0.0,
+   "gift_covered_share": 0.0,
+   "vol_share": {
+    "young": 0.0,
+    "prime": 1.0,
+    "old": 0.0
+   },
+   "pop_share": {
+    "young": 0.0,
+    "prime": 1.0,
+    "old": 0.0
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 0,
+    "им": 0
+   }
+  },
+  "A_u_ALGO_дар": {
+   "lam": 4.553195053614841,
+   "D_over_Y": 50659141.812741496,
+   "n_crisis": 280,
+   "first_crisis": 20,
+   "defr_end": 0.3,
+   "gini": 0.6249420738865813,
+   "pool_over_Y": 0.0013339004219227652,
+   "n_deaths": 0,
+   "n_lots_end": 16486,
+   "max_carrier_depth": 0,
+   "mean_holder_depth": 0.0,
+   "n_transfers": 0,
+   "gift_total": 0.0,
+   "gift_covered": 0.0,
+   "gift_covered_share": 0.0,
+   "vol_share": {
+    "young": 0.0,
+    "prime": 1.0,
+    "old": 0.0
+   },
+   "pop_share": {
+    "young": 0.0,
+    "prime": 1.0,
+    "old": 0.0
+   },
+   "broken_share_final": 0.0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 0,
+    "им": 0
+   }
+  }
+ },
+ "integrity": {
+  "results_sha256": "55cb86484175d8b5dc36e610ff0c9f34da630eac09159dfac01cabb27c5f2659"
+ }
+}

@@ -1,0 +1,1595 @@
+{
+ "meta": {
+  "python": "3.12.14",
+  "numpy": "2.1.3",
+  "seed": 7,
+  "lambda_definition": "λ25 = exp(25·slope log(D+1)), T=300",
+  "tau_capture": 0.009148037382302234,
+  "status": "E/G — демонстрация изоляции операторов, не открытие",
+  "v2_fix": "estate-изъятие ρ=B зачисляется в пул (в v1 испарялось)",
+  "transfer_channels": [
+   "наследование d,s (ρ=A)",
+   "estate-гашение (ρ=B)",
+   "g0=15 ex nihilo",
+   "юбилей",
+   "рента пула ∝ s",
+   "займы σ",
+   "стресс долга"
+  ]
+ },
+ "runs": {
+  "base_A": {
+   "lam": 5.873782832641999,
+   "D_over_Y": 11873468.406437587,
+   "n_crisis": 250,
+   "first_crisis": 50,
+   "defr_end": 0.62,
+   "gini": 0.7900510099325924,
+   "top": 0.545707762489466,
+   "Y_growth": -0.08745562394238822,
+   "corr_dY_R": 0.05494738690077129,
+   "pool_over_Y": 0.009148037382302234,
+   "n_lots_end": 26502,
+   "depth_hist": {
+    "0": 2718,
+    "1": 5468,
+    "2": 5389,
+    "3": 4923,
+    "4": 4049,
+    "5": 3955
+   },
+   "depth_stock": {
+    "0": 1.2251336268021823e-06,
+    "1": 2.2190344510458043e-05,
+    "2": 0.0004035310249545196,
+    "3": 0.006892657056486212,
+    "4": 0.08789587207591494,
+    "5": 0.9047845243645137
+   },
+   "stock_dead": 0.9999987748663799,
+   "max_depth": 7,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 260,
+     "p": 4994812.96,
+     "birth": 29,
+     "deaths": 7,
+     "hist": [
+      [
+       29,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 289,
+     "p": 98888715.49,
+     "birth": 30,
+     "deaths": 7,
+     "hist": [
+      [
+       30,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 324,
+     "p": 129767866.99,
+     "birth": 31,
+     "deaths": 7,
+     "hist": [
+      [
+       31,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 359,
+     "p": 163492381.87,
+     "birth": 32,
+     "deaths": 7,
+     "hist": [
+      [
+       32,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 395,
+     "p": 200688055.31,
+     "birth": 33,
+     "deaths": 7,
+     "hist": [
+      [
+       33,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "base_B": {
+   "lam": 1.109889748753395,
+   "D_over_Y": 0.007735193204961563,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.5254055678104512,
+   "top": 0.3490376624334555,
+   "Y_growth": 0.011256697322900959,
+   "corr_dY_R": -0.050827832241516206,
+   "pool_over_Y": 0.005045199411248245,
+   "n_lots_end": 5,
+   "depth_hist": {
+    "0": 5,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 0,
+   "B_recovery": 0.0,
+   "B_n_deaths": 389,
+   "sample_chains": [
+    {
+     "id": 4377,
+     "p": 6.51,
+     "birth": 295,
+     "deaths": 0,
+     "hist": [
+      [
+       295,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4384,
+     "p": 24.84,
+     "birth": 296,
+     "deaths": 0,
+     "hist": [
+      [
+       296,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4392,
+     "p": 31.15,
+     "birth": 297,
+     "deaths": 0,
+     "hist": [
+      [
+       297,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4399,
+     "p": 38.09,
+     "birth": 298,
+     "deaths": 0,
+     "hist": [
+      [
+       298,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4408,
+     "p": 45.82,
+     "birth": 299,
+     "deaths": 0,
+     "hist": [
+      [
+       299,
+       "orig"
+      ]
+     ]
+    }
+   ]
+  },
+  "base_C": {
+   "lam": 1.1653166065645884,
+   "D_over_Y": 0.013058314290263304,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.11106290996497506,
+   "top": 0.13256287476756454,
+   "Y_growth": 0.011064250534526083,
+   "corr_dY_R": -0.0715756714745098,
+   "pool_over_Y": 0.0024939988054210717,
+   "n_lots_end": 11,
+   "depth_hist": {
+    "0": 11,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 0.9999999999999999,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 0,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 4407,
+     "p": 6.14,
+     "birth": 299,
+     "deaths": 0,
+     "hist": [
+      [
+       299,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4368,
+     "p": 7.15,
+     "birth": 294,
+     "deaths": 0,
+     "hist": [
+      [
+       294,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4377,
+     "p": 22.17,
+     "birth": 295,
+     "deaths": 0,
+     "hist": [
+      [
+       295,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4384,
+     "p": 28.43,
+     "birth": 296,
+     "deaths": 0,
+     "hist": [
+      [
+       296,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4392,
+     "p": 35.3,
+     "birth": 297,
+     "deaths": 0,
+     "hist": [
+      [
+       297,
+       "orig"
+      ]
+     ]
+    }
+   ]
+  },
+  "T1выкл_запись": {
+   "lam": 1.0,
+   "D_over_Y": 0.0,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.35973451209858937,
+   "top": 0.24117684504977932,
+   "Y_growth": 0.007891225166376614,
+   "corr_dY_R": NaN,
+   "pool_over_Y": 0.0,
+   "n_lots_end": 0,
+   "depth_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 0,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": []
+  },
+  "T2выкл_квалиф": {
+   "lam": 5.880278722722747,
+   "D_over_Y": 22900534.483112946,
+   "n_crisis": 256,
+   "first_crisis": 44,
+   "defr_end": 1.0,
+   "gini": 0.05805051590492411,
+   "top": 0.1176723583539227,
+   "Y_growth": -0.19553211507519902,
+   "corr_dY_R": NaN,
+   "pool_over_Y": 0.0,
+   "n_lots_end": 43455,
+   "depth_hist": {
+    "0": 4407,
+    "1": 8864,
+    "2": 8606,
+    "3": 8171,
+    "4": 6877,
+    "5": 6530
+   },
+   "depth_stock": {
+    "0": 1.4036485545250117e-06,
+    "1": 2.504145077098535e-05,
+    "2": 0.0003983880770240338,
+    "3": 0.00657420830810722,
+    "4": 0.08293439950871981,
+    "5": 0.9100665590068256
+   },
+   "stock_dead": 0.9999985963514476,
+   "max_depth": 8,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 107,
+     "p": 16632162.5,
+     "birth": 22,
+     "deaths": 8,
+     "hist": [
+      [
+       22,
+       "orig"
+      ],
+      [
+       22,
+       "carrier_death"
+      ],
+      [
+       61,
+       "carrier_death"
+      ],
+      [
+       104,
+       "carrier_death"
+      ],
+      [
+       135,
+       "carrier_death"
+      ],
+      [
+       169,
+       "carrier_death"
+      ],
+      [
+       221,
+       "carrier_death"
+      ],
+      [
+       260,
+       "carrier_death"
+      ],
+      [
+       298,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 186,
+     "p": 82486.22,
+     "birth": 26,
+     "deaths": 7,
+     "hist": [
+      [
+       26,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 213,
+     "p": 25563434.9,
+     "birth": 27,
+     "deaths": 7,
+     "hist": [
+      [
+       27,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 243,
+     "p": 52167390.32,
+     "birth": 28,
+     "deaths": 7,
+     "hist": [
+      [
+       28,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 276,
+     "p": 80315753.01,
+     "birth": 29,
+     "deaths": 7,
+     "hist": [
+      [
+       29,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "T3выкл_извлеч": {
+   "lam": 1.9723497895823263,
+   "D_over_Y": 90.70481438739247,
+   "n_crisis": 246,
+   "first_crisis": 54,
+   "defr_end": 0.945,
+   "gini": 0.05805051590492411,
+   "top": 0.1176723583539227,
+   "Y_growth": -0.19228927780274602,
+   "corr_dY_R": NaN,
+   "pool_over_Y": 0.0,
+   "n_lots_end": 38636,
+   "depth_hist": {
+    "0": 4120,
+    "1": 8310,
+    "2": 7786,
+    "3": 7240,
+    "4": 5827,
+    "5": 5353
+   },
+   "depth_stock": {
+    "0": 0.10197777680331047,
+    "1": 0.2160985626778113,
+    "2": 0.204937355293523,
+    "3": 0.19161214736844162,
+    "4": 0.1506318079963777,
+    "5": 0.13474234986053538
+   },
+   "stock_dead": 0.898022223196689,
+   "max_depth": 8,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 107,
+     "p": 1.63,
+     "birth": 22,
+     "deaths": 8,
+     "hist": [
+      [
+       22,
+       "orig"
+      ],
+      [
+       22,
+       "carrier_death"
+      ],
+      [
+       61,
+       "carrier_death"
+      ],
+      [
+       104,
+       "carrier_death"
+      ],
+      [
+       135,
+       "carrier_death"
+      ],
+      [
+       169,
+       "carrier_death"
+      ],
+      [
+       221,
+       "carrier_death"
+      ],
+      [
+       260,
+       "carrier_death"
+      ],
+      [
+       298,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 185,
+     "p": 0.01,
+     "birth": 26,
+     "deaths": 7,
+     "hist": [
+      [
+       26,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 211,
+     "p": 3.35,
+     "birth": 27,
+     "deaths": 7,
+     "hist": [
+      [
+       27,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 240,
+     "p": 7.24,
+     "birth": 28,
+     "deaths": 7,
+     "hist": [
+      [
+       28,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 271,
+     "p": 11.78,
+     "birth": 29,
+     "deaths": 7,
+     "hist": [
+      [
+       29,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "T4выкл_перенос": {
+   "lam": 1.109889748753395,
+   "D_over_Y": 0.007735193204961563,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.5254055678104512,
+   "top": 0.3490376624334555,
+   "Y_growth": 0.011256697322900959,
+   "corr_dY_R": -0.050827832241516206,
+   "pool_over_Y": 0.005045199411248245,
+   "n_lots_end": 5,
+   "depth_hist": {
+    "0": 5,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 0,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 4377,
+     "p": 6.51,
+     "birth": 295,
+     "deaths": 0,
+     "hist": [
+      [
+       295,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4384,
+     "p": 24.84,
+     "birth": 296,
+     "deaths": 0,
+     "hist": [
+      [
+       296,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4392,
+     "p": 31.15,
+     "birth": 297,
+     "deaths": 0,
+     "hist": [
+      [
+       297,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4399,
+     "p": 38.09,
+     "birth": 298,
+     "deaths": 0,
+     "hist": [
+      [
+       298,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4408,
+     "p": 45.82,
+     "birth": 299,
+     "deaths": 0,
+     "hist": [
+      [
+       299,
+       "orig"
+      ]
+     ]
+    }
+   ]
+  },
+  "capture_дань": {
+   "lam": 1.0,
+   "D_over_Y": 0.0,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.0528487672726564,
+   "top": 0.11412862152064192,
+   "Y_growth": 0.007891225166376614,
+   "corr_dY_R": -0.15981891177919327,
+   "pool_over_Y": 0.009148037382302234,
+   "n_lots_end": 0,
+   "depth_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 0,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": []
+  },
+  "A_юбилей30": {
+   "lam": 1.30241817014911,
+   "D_over_Y": 0.0,
+   "n_crisis": 4,
+   "first_crisis": 55,
+   "defr_end": 0.0,
+   "gini": 0.6932541101039604,
+   "top": 0.4723777890852031,
+   "Y_growth": 0.03318253022055936,
+   "corr_dY_R": -0.0026124654497869416,
+   "pool_over_Y": 0.007304274160957657,
+   "n_lots_end": 0,
+   "depth_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "depth_stock": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "stock_dead": 0.0,
+   "max_depth": 1,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": []
+  },
+  "A_phi025": {
+   "lam": 5.794382662340065,
+   "D_over_Y": 5166043.028669056,
+   "n_crisis": 246,
+   "first_crisis": 54,
+   "defr_end": 0.36,
+   "gini": 0.624264847262076,
+   "top": 0.3368071017625018,
+   "Y_growth": 0.14190322240773867,
+   "corr_dY_R": 0.4016542359215267,
+   "pool_over_Y": 0.006713954982358437,
+   "n_lots_end": 15039,
+   "depth_hist": {
+    "0": 395,
+    "1": 1903,
+    "2": 3342,
+    "3": 3291,
+    "4": 2900,
+    "5": 3208
+   },
+   "depth_stock": {
+    "0": 1.167670121017382e-07,
+    "1": 4.273231791679985e-06,
+    "2": 0.0001382489826545767,
+    "3": 0.003974252119525335,
+    "4": 0.06961442285056829,
+    "5": 0.9262686860484465
+   },
+   "stock_dead": 0.9999998832329864,
+   "max_depth": 7,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 283,
+     "p": 84477762.2,
+     "birth": 30,
+     "deaths": 7,
+     "hist": [
+      [
+       30,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 316,
+     "p": 122200534.86,
+     "birth": 31,
+     "deaths": 7,
+     "hist": [
+      [
+       31,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 351,
+     "p": 154673141.35,
+     "birth": 32,
+     "deaths": 7,
+     "hist": [
+      [
+       32,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 385,
+     "p": 190566417.3,
+     "birth": 33,
+     "deaths": 7,
+     "hist": [
+      [
+       33,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 422,
+     "p": 230633321.05,
+     "birth": 34,
+     "deaths": 7,
+     "hist": [
+      [
+       34,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "A_phi050": {
+   "lam": 5.730248052276919,
+   "D_over_Y": 827801.816426422,
+   "n_crisis": 242,
+   "first_crisis": 58,
+   "defr_end": 0.28,
+   "gini": 0.5556268665196761,
+   "top": 0.2841887784309397,
+   "Y_growth": 0.7938769288768627,
+   "corr_dY_R": 0.0520583960231532,
+   "pool_over_Y": 0.03314091339288219,
+   "n_lots_end": 6421,
+   "depth_hist": {
+    "0": 0,
+    "1": 0,
+    "2": 131,
+    "3": 1245,
+    "4": 2116,
+    "5": 2929
+   },
+   "depth_stock": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 2.6383158991949575e-05,
+    "3": 0.0017612003112136988,
+    "4": 0.04855669035655779,
+    "5": 0.9496557261732357
+   },
+   "stock_dead": 0.9999999999999991,
+   "max_depth": 7,
+   "B_recovery": null,
+   "B_n_deaths": 0,
+   "sample_chains": [
+    {
+     "id": 275,
+     "p": 64164293.09,
+     "birth": 30,
+     "deaths": 7,
+     "hist": [
+      [
+       30,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 306,
+     "p": 114592056.23,
+     "birth": 31,
+     "deaths": 7,
+     "hist": [
+      [
+       31,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 339,
+     "p": 146052825.25,
+     "birth": 32,
+     "deaths": 7,
+     "hist": [
+      [
+       32,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 372,
+     "p": 180649553.59,
+     "birth": 33,
+     "deaths": 7,
+     "hist": [
+      [
+       33,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 406,
+     "p": 219491950.61,
+     "birth": 34,
+     "deaths": 7,
+     "hist": [
+      [
+       34,
+       "orig"
+      ],
+      [
+       35,
+       "carrier_death"
+      ],
+      [
+       67,
+       "carrier_death"
+      ],
+      [
+       107,
+       "carrier_death"
+      ],
+      [
+       162,
+       "carrier_death"
+      ],
+      [
+       206,
+       "carrier_death"
+      ],
+      [
+       239,
+       "carrier_death"
+      ],
+      [
+       277,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  }
+ },
+ "integrity": {
+  "results_sha256": "b07f52b75a4e4f29f7fb447a57e84663671e995bf42ee36a45b531e350ac8f22"
+ }
+}

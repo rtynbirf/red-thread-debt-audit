@@ -1,0 +1,1402 @@
+{
+ "meta": {
+  "python": "3.12.14",
+  "numpy": "2.1.3",
+  "seed": 7,
+  "lambda_definition": "λ25 = exp(25·slope log(D+1)), T=300",
+  "q_break": 0.15,
+  "c_audit": 0.1,
+  "q_fp": 0.02,
+  "status": "E/G — изоляция операторов, не открытие",
+  "preregistered": [
+   "P1 класс>договор в B",
+   "P2 depth~turnover",
+   "P3 обрывы растут с оборотом",
+   "P4 аудит гасит обрывы, E/Y падает от оборота",
+   "P5 зомби-компаундинг в noaudit"
+  ],
+  "transfer_channels": [
+   "наследование d,s (ρ=A)",
+   "estate-гашение (ρ=B)",
+   "g0=15 ex nihilo",
+   "юбилей",
+   "рента пула ∝ s",
+   "займы σ",
+   "стресс долга",
+   "holder_transfer (τ-сторона)",
+   "audit_extinguish / false_positive (A_ver)"
+  ]
+ },
+ "runs": {
+  "base_A3": {
+   "lam": 5.885210637281541,
+   "D_over_Y": 12970130.192611758,
+   "n_crisis": 249,
+   "first_crisis": 51,
+   "defr_end": 0.685,
+   "gini": 0.8357464202367018,
+   "top": 0.6607002715037622,
+   "Y_growth": -0.1123807743401431,
+   "corr_dY_R": 0.1089928313979147,
+   "pool_over_Y": 0.009532007483500613,
+   "n_lots_end": 28119,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 0.0,
+   "holder_depth_stock": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "broken_share_final": 0.0,
+   "broken_share_max": 0.0,
+   "n_transfers": 0,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 641,
+    "им": 641
+   },
+   "sample_chains": [
+    {
+     "id": 72,
+     "p": 115118607.56,
+     "birth": 20,
+     "deaths": 8,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       20,
+       "orig"
+      ],
+      [
+       28,
+       "carrier_death"
+      ],
+      [
+       69,
+       "carrier_death"
+      ],
+      [
+       110,
+       "carrier_death"
+      ],
+      [
+       143,
+       "carrier_death"
+      ],
+      [
+       176,
+       "carrier_death"
+      ],
+      [
+       217,
+       "carrier_death"
+      ],
+      [
+       248,
+       "carrier_death"
+      ],
+      [
+       292,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 92,
+     "p": 217409929.98,
+     "birth": 21,
+     "deaths": 8,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       21,
+       "orig"
+      ],
+      [
+       28,
+       "carrier_death"
+      ],
+      [
+       69,
+       "carrier_death"
+      ],
+      [
+       110,
+       "carrier_death"
+      ],
+      [
+       143,
+       "carrier_death"
+      ],
+      [
+       176,
+       "carrier_death"
+      ],
+      [
+       217,
+       "carrier_death"
+      ],
+      [
+       248,
+       "carrier_death"
+      ],
+      [
+       292,
+       "carrier_death"
+      ]
+     ]
+    },
+    {
+     "id": 115,
+     "p": 275400524.17,
+     "birth": 22,
+     "deaths": 8,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       22,
+       "orig"
+      ],
+      [
+       28,
+       "carrier_death"
+      ],
+      [
+       69,
+       "carrier_death"
+      ],
+      [
+       110,
+       "carrier_death"
+      ],
+      [
+       143,
+       "carrier_death"
+      ],
+      [
+       176,
+       "carrier_death"
+      ],
+      [
+       217,
+       "carrier_death"
+      ],
+      [
+       248,
+       "carrier_death"
+      ],
+      [
+       292,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "base_B3": {
+   "lam": 1.1091778665064398,
+   "D_over_Y": 0.07520821261438737,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.015,
+   "gini": 0.5524665737941749,
+   "top": 0.38345387285933796,
+   "Y_growth": 0.007104653891731033,
+   "corr_dY_R": -0.035599228877527964,
+   "pool_over_Y": 0.005053359716526888,
+   "n_lots_end": 38,
+   "max_carrier_depth": 0,
+   "mean_holder_depth": 0.0,
+   "holder_depth_stock": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "broken_share_final": 0.0,
+   "broken_share_max": 0.0,
+   "n_transfers": 0,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": 0.0,
+     "n": 207
+    },
+    "им": {
+     "mean": 0.0,
+     "n": 200
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 641,
+    "им": 641
+   },
+   "sample_chains": [
+    {
+     "id": 4564,
+     "p": 4.98,
+     "birth": 296,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       296,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4578,
+     "p": 23.26,
+     "birth": 297,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       297,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4595,
+     "p": 29.17,
+     "birth": 298,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       298,
+       "orig"
+      ]
+     ]
+    }
+   ]
+  },
+  "base_B3_soft": {
+   "lam": 1.157181818206151,
+   "D_over_Y": 0.08642813339464868,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.015,
+   "gini": 0.5479042682716342,
+   "top": 0.3968772971438631,
+   "Y_growth": 0.006874121867606043,
+   "corr_dY_R": 0.08759799474881046,
+   "pool_over_Y": 0.00500612437747313,
+   "n_lots_end": 54,
+   "max_carrier_depth": 0,
+   "mean_holder_depth": 0.0,
+   "holder_depth_stock": {
+    "0": 1.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "broken_share_final": 0.0,
+   "broken_share_max": 0.0,
+   "n_transfers": 0,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": 0.3156131907119098,
+     "n": 306
+    },
+    "им": {
+     "mean": 0.30333319244853263,
+     "n": 291
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 641,
+    "им": 641
+   },
+   "sample_chains": [
+    {
+     "id": 4564,
+     "p": 18.08,
+     "birth": 296,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       296,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4578,
+     "p": 27.91,
+     "birth": 297,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       297,
+       "orig"
+      ]
+     ]
+    },
+    {
+     "id": 4595,
+     "p": 31.97,
+     "birth": 298,
+     "deaths": 0,
+     "transfers": 0,
+     "broken": false,
+     "hist": [
+      [
+       298,
+       "orig"
+      ]
+     ]
+    }
+   ]
+  },
+  "t001_audit": {
+   "lam": 5.451980534764765,
+   "D_over_Y": 5297924.440853871,
+   "n_crisis": 249,
+   "first_crisis": 51,
+   "defr_end": 0.65,
+   "gini": 0.8109486512241884,
+   "top": 0.6000470481657546,
+   "Y_growth": -0.10115716713401726,
+   "corr_dY_R": 0.10320181682080351,
+   "pool_over_Y": 0.010183635425070139,
+   "n_lots_end": 19138,
+   "max_carrier_depth": 8,
+   "mean_holder_depth": 2.1714231439167917,
+   "holder_depth_stock": {
+    "0": 0.12052735654518273,
+    "1": 0.23861177694944757,
+    "2": 0.2764885486665001,
+    "3": 0.18488454070996074,
+    "4": 0.09908241193386165,
+    "5": 0.08040536519505524
+   },
+   "broken_share_final": 0.008885972562587689,
+   "broken_share_max": 0.024391341372251765,
+   "n_transfers": 24865,
+   "n_audit_kill": 3480,
+   "n_fp_kill": 4948,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 637,
+    "им": 650
+   },
+   "sample_chains": [
+    {
+     "id": 4600,
+     "p": 1095925.0,
+     "birth": 91,
+     "deaths": 4,
+     "transfers": 9,
+     "broken": false,
+     "hist": [
+      [
+       152,
+       "holder_transfer"
+      ],
+      [
+       165,
+       "holder_transfer"
+      ],
+      [
+       171,
+       "carrier_death"
+      ],
+      [
+       198,
+       "holder_transfer"
+      ],
+      [
+       218,
+       "carrier_death"
+      ],
+      [
+       226,
+       "holder_transfer"
+      ],
+      [
+       241,
+       "holder_transfer"
+      ],
+      [
+       243,
+       "holder_transfer"
+      ],
+      [
+       251,
+       "carrier_death"
+      ],
+      [
+       253,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 2254,
+     "p": 17697353.78,
+     "birth": 64,
+     "deaths": 5,
+     "transfers": 8,
+     "broken": false,
+     "hist": [
+      [
+       124,
+       "carrier_death"
+      ],
+      [
+       182,
+       "carrier_death"
+      ],
+      [
+       215,
+       "holder_transfer"
+      ],
+      [
+       223,
+       "carrier_death"
+      ],
+      [
+       263,
+       "holder_transfer"
+      ],
+      [
+       273,
+       "holder_transfer"
+      ],
+      [
+       276,
+       "holder_transfer"
+      ],
+      [
+       278,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "carrier_death"
+      ],
+      [
+       297,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 943,
+     "p": 56757811.09,
+     "birth": 44,
+     "deaths": 7,
+     "transfers": 6,
+     "broken": true,
+     "hist": [
+      [
+       131,
+       "carrier_death"
+      ],
+      [
+       169,
+       "holder_transfer"
+      ],
+      [
+       185,
+       "carrier_death"
+      ],
+      [
+       217,
+       "carrier_death"
+      ],
+      [
+       218,
+       "holder_transfer"
+      ],
+      [
+       251,
+       "carrier_death"
+      ],
+      [
+       260,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "lineage_break"
+      ],
+      [
+       297,
+       "carrier_death"
+      ]
+     ]
+    }
+   ]
+  },
+  "t005_noaudit": {
+   "lam": 5.886035696455511,
+   "D_over_Y": 13003251.237341572,
+   "n_crisis": 249,
+   "first_crisis": 51,
+   "defr_end": 0.685,
+   "gini": 0.8266229579789512,
+   "top": 0.6338315175865092,
+   "Y_growth": -0.11331129376166271,
+   "corr_dY_R": 0.0097878872469139,
+   "pool_over_Y": 0.010482122339775976,
+   "n_lots_end": 28453,
+   "max_carrier_depth": 7,
+   "mean_holder_depth": 12.654308143551017,
+   "holder_depth_stock": {
+    "0": 4.4469497456743e-06,
+    "1": 6.022266043876617e-05,
+    "2": 0.0003590736240945804,
+    "3": 0.003148457727378377,
+    "4": 0.003629248258967123,
+    "5": 0.9927985507793701
+   },
+   "broken_share_final": 0.8421711065116696,
+   "broken_share_max": 0.8421711065116696,
+   "n_transfers": 164314,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 647,
+    "им": 641
+   },
+   "sample_chains": [
+    {
+     "id": 510,
+     "p": 46794499.61,
+     "birth": 35,
+     "deaths": 6,
+     "transfers": 25,
+     "broken": true,
+     "hist": [
+      [
+       234,
+       "holder_transfer"
+      ],
+      [
+       234,
+       "lineage_break"
+      ],
+      [
+       237,
+       "holder_transfer"
+      ],
+      [
+       249,
+       "holder_transfer"
+      ],
+      [
+       250,
+       "holder_transfer"
+      ],
+      [
+       254,
+       "holder_transfer"
+      ],
+      [
+       255,
+       "carrier_death"
+      ],
+      [
+       258,
+       "holder_transfer"
+      ],
+      [
+       265,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 1380,
+     "p": 45024122.1,
+     "birth": 51,
+     "deaths": 6,
+     "transfers": 24,
+     "broken": true,
+     "hist": [
+      [
+       224,
+       "holder_transfer"
+      ],
+      [
+       237,
+       "holder_transfer"
+      ],
+      [
+       240,
+       "holder_transfer"
+      ],
+      [
+       244,
+       "carrier_death"
+      ],
+      [
+       257,
+       "holder_transfer"
+      ],
+      [
+       265,
+       "holder_transfer"
+      ],
+      [
+       272,
+       "holder_transfer"
+      ],
+      [
+       276,
+       "holder_transfer"
+      ],
+      [
+       287,
+       "carrier_death"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 587,
+     "p": 93877038.4,
+     "birth": 37,
+     "deaths": 6,
+     "transfers": 24,
+     "broken": true,
+     "hist": [
+      [
+       199,
+       "holder_transfer"
+      ],
+      [
+       200,
+       "carrier_death"
+      ],
+      [
+       226,
+       "holder_transfer"
+      ],
+      [
+       231,
+       "carrier_death"
+      ],
+      [
+       238,
+       "holder_transfer"
+      ],
+      [
+       246,
+       "holder_transfer"
+      ],
+      [
+       272,
+       "holder_transfer"
+      ],
+      [
+       275,
+       "carrier_death"
+      ],
+      [
+       287,
+       "holder_transfer"
+      ],
+      [
+       294,
+       "holder_transfer"
+      ]
+     ]
+    }
+   ]
+  },
+  "t005_audit": {
+   "lam": 4.791768627687234,
+   "D_over_Y": 1264893.1972246335,
+   "n_crisis": 249,
+   "first_crisis": 51,
+   "defr_end": 0.67,
+   "gini": 0.8039799747466531,
+   "top": 0.5782576080484331,
+   "Y_growth": -0.10753082562077365,
+   "corr_dY_R": 0.09919675440133739,
+   "pool_over_Y": 0.009491324690292324,
+   "n_lots_end": 12689,
+   "max_carrier_depth": 7,
+   "mean_holder_depth": 10.233687243397855,
+   "holder_depth_stock": {
+    "0": 0.00013872045677875357,
+    "1": 0.0009057029387597526,
+    "2": 0.009682731489913688,
+    "3": 0.005749919869946468,
+    "4": 0.010053628972792059,
+    "5": 0.973469296271812
+   },
+   "broken_share_final": 0.045387523553534856,
+   "broken_share_max": 0.12603547861566422,
+   "n_transfers": 94418,
+   "n_audit_kill": 12568,
+   "n_fp_kill": 3474,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 642,
+    "им": 645
+   },
+   "sample_chains": [
+    {
+     "id": 961,
+     "p": 87688162.5,
+     "birth": 44,
+     "deaths": 7,
+     "transfers": 18,
+     "broken": false,
+     "hist": [
+      [
+       210,
+       "holder_transfer"
+      ],
+      [
+       211,
+       "carrier_death"
+      ],
+      [
+       215,
+       "holder_transfer"
+      ],
+      [
+       242,
+       "carrier_death"
+      ],
+      [
+       251,
+       "holder_transfer"
+      ],
+      [
+       274,
+       "holder_transfer"
+      ],
+      [
+       283,
+       "holder_transfer"
+      ],
+      [
+       283,
+       "carrier_death"
+      ],
+      [
+       284,
+       "holder_transfer"
+      ],
+      [
+       291,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 2749,
+     "p": 11769696.97,
+     "birth": 71,
+     "deaths": 5,
+     "transfers": 19,
+     "broken": false,
+     "hist": [
+      [
+       189,
+       "holder_transfer"
+      ],
+      [
+       202,
+       "holder_transfer"
+      ],
+      [
+       218,
+       "holder_transfer"
+      ],
+      [
+       220,
+       "holder_transfer"
+      ],
+      [
+       223,
+       "carrier_death"
+      ],
+      [
+       239,
+       "holder_transfer"
+      ],
+      [
+       244,
+       "holder_transfer"
+      ],
+      [
+       252,
+       "holder_transfer"
+      ],
+      [
+       276,
+       "carrier_death"
+      ],
+      [
+       299,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 136,
+     "p": 324611819.08,
+     "birth": 23,
+     "deaths": 6,
+     "transfers": 18,
+     "broken": false,
+     "hist": [
+      [
+       198,
+       "holder_transfer"
+      ],
+      [
+       206,
+       "holder_transfer"
+      ],
+      [
+       222,
+       "carrier_death"
+      ],
+      [
+       223,
+       "holder_transfer"
+      ],
+      [
+       229,
+       "holder_transfer"
+      ],
+      [
+       237,
+       "holder_transfer"
+      ],
+      [
+       266,
+       "holder_transfer"
+      ],
+      [
+       267,
+       "holder_transfer"
+      ],
+      [
+       282,
+       "carrier_death"
+      ],
+      [
+       284,
+       "holder_transfer"
+      ]
+     ]
+    }
+   ]
+  },
+  "t020_noaudit": {
+   "lam": 5.896858556606747,
+   "D_over_Y": 13924193.239471367,
+   "n_crisis": 249,
+   "first_crisis": 51,
+   "defr_end": 0.73,
+   "gini": 0.8383157463539651,
+   "top": 0.661495061994702,
+   "Y_growth": -0.12808647302961063,
+   "corr_dY_R": 0.14697736993508112,
+   "pool_over_Y": 0.010129773083579232,
+   "n_lots_end": 30244,
+   "max_carrier_depth": 7,
+   "mean_holder_depth": 50.334432345654896,
+   "holder_depth_stock": {
+    "0": 1.3474273586252541e-07,
+    "1": 1.8295584463181578e-07,
+    "2": 2.7012747620711554e-07,
+    "3": 3.834702414566302e-07,
+    "4": 5.323253594662239e-07,
+    "5": 0.9999984963783382
+   },
+   "broken_share_final": 0.9986185618393617,
+   "broken_share_max": 0.9986185618393617,
+   "n_transfers": 699123,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 649,
+    "им": 637
+   },
+   "sample_chains": [
+    {
+     "id": 112,
+     "p": 349535229.94,
+     "birth": 22,
+     "deaths": 7,
+     "transfers": 73,
+     "broken": true,
+     "hist": [
+      [
+       267,
+       "holder_transfer"
+      ],
+      [
+       272,
+       "holder_transfer"
+      ],
+      [
+       273,
+       "holder_transfer"
+      ],
+      [
+       280,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "carrier_death"
+      ],
+      [
+       289,
+       "holder_transfer"
+      ],
+      [
+       291,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ],
+      [
+       296,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 21,
+     "p": 43393067.06,
+     "birth": 17,
+     "deaths": 7,
+     "transfers": 71,
+     "broken": true,
+     "hist": [
+      [
+       280,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "holder_transfer"
+      ],
+      [
+       281,
+       "carrier_death"
+      ],
+      [
+       287,
+       "holder_transfer"
+      ],
+      [
+       288,
+       "holder_transfer"
+      ],
+      [
+       289,
+       "holder_transfer"
+      ],
+      [
+       290,
+       "holder_transfer"
+      ],
+      [
+       291,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ],
+      [
+       299,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 1016,
+     "p": 45710268.7,
+     "birth": 45,
+     "deaths": 6,
+     "transfers": 72,
+     "broken": true,
+     "hist": [
+      [
+       277,
+       "holder_transfer"
+      ],
+      [
+       280,
+       "holder_transfer"
+      ],
+      [
+       282,
+       "holder_transfer"
+      ],
+      [
+       283,
+       "holder_transfer"
+      ],
+      [
+       286,
+       "holder_transfer"
+      ],
+      [
+       287,
+       "holder_transfer"
+      ],
+      [
+       289,
+       "holder_transfer"
+      ],
+      [
+       289,
+       "carrier_death"
+      ],
+      [
+       293,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ]
+     ]
+    }
+   ]
+  },
+  "t020_audit": {
+   "lam": 3.031287937811985,
+   "D_over_Y": 5082.294881264758,
+   "n_crisis": 248,
+   "first_crisis": 51,
+   "defr_end": 0.645,
+   "gini": 0.8115429265081194,
+   "top": 0.6126218214177684,
+   "Y_growth": -0.10437653859612349,
+   "corr_dY_R": 0.1408850355137266,
+   "pool_over_Y": 0.010497804694441807,
+   "n_lots_end": 4905,
+   "max_carrier_depth": 5,
+   "mean_holder_depth": 36.928620745742755,
+   "holder_depth_stock": {
+    "0": 0.0003276412028918964,
+    "1": 0.00042633701032716224,
+    "2": 0.0005046559484825258,
+    "3": 0.0005463946961372469,
+    "4": 0.0006591834496366683,
+    "5": 0.9975357876925218
+   },
+   "broken_share_final": 0.3598794006160924,
+   "broken_share_max": 0.7150980885283444,
+   "n_transfers": 179352,
+   "n_audit_kill": 20563,
+   "n_fp_kill": 1388,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 653,
+    "им": 648
+   },
+   "sample_chains": [
+    {
+     "id": 2094,
+     "p": 19877241.11,
+     "birth": 62,
+     "deaths": 5,
+     "transfers": 45,
+     "broken": false,
+     "hist": [
+      [
+       261,
+       "holder_transfer"
+      ],
+      [
+       262,
+       "holder_transfer"
+      ],
+      [
+       264,
+       "holder_transfer"
+      ],
+      [
+       276,
+       "holder_transfer"
+      ],
+      [
+       278,
+       "holder_transfer"
+      ],
+      [
+       279,
+       "holder_transfer"
+      ],
+      [
+       283,
+       "holder_transfer"
+      ],
+      [
+       287,
+       "holder_transfer"
+      ],
+      [
+       289,
+       "carrier_death"
+      ],
+      [
+       294,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 6166,
+     "p": 1414285.48,
+     "birth": 109,
+     "deaths": 4,
+     "transfers": 41,
+     "broken": true,
+     "hist": [
+      [
+       272,
+       "holder_transfer"
+      ],
+      [
+       275,
+       "holder_transfer"
+      ],
+      [
+       277,
+       "holder_transfer"
+      ],
+      [
+       277,
+       "lineage_break"
+      ],
+      [
+       278,
+       "holder_transfer"
+      ],
+      [
+       279,
+       "holder_transfer"
+      ],
+      [
+       282,
+       "carrier_death"
+      ],
+      [
+       288,
+       "holder_transfer"
+      ],
+      [
+       289,
+       "holder_transfer"
+      ],
+      [
+       298,
+       "holder_transfer"
+      ]
+     ]
+    },
+    {
+     "id": 4571,
+     "p": 4181570.46,
+     "birth": 92,
+     "deaths": 4,
+     "transfers": 40,
+     "broken": false,
+     "hist": [
+      [
+       266,
+       "holder_transfer"
+      ],
+      [
+       271,
+       "holder_transfer"
+      ],
+      [
+       272,
+       "holder_transfer"
+      ],
+      [
+       276,
+       "holder_transfer"
+      ],
+      [
+       283,
+       "holder_transfer"
+      ],
+      [
+       286,
+       "holder_transfer"
+      ],
+      [
+       287,
+       "holder_transfer"
+      ],
+      [
+       288,
+       "holder_transfer"
+      ],
+      [
+       291,
+       "holder_transfer"
+      ],
+      [
+       295,
+       "holder_transfer"
+      ]
+     ]
+    }
+   ]
+  },
+  "capture_ревиз": {
+   "lam": 1.0,
+   "D_over_Y": 0.0,
+   "n_crisis": 0,
+   "first_crisis": -1,
+   "defr_end": 0.0,
+   "gini": 0.0489937972014232,
+   "top": 0.1151918046938027,
+   "Y_growth": 0.004980138811534951,
+   "corr_dY_R": -0.12699412712840533,
+   "pool_over_Y": 0.009099999999999999,
+   "n_lots_end": 0,
+   "max_carrier_depth": 0,
+   "mean_holder_depth": 0.0,
+   "holder_depth_stock": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0
+   },
+   "broken_share_final": 0.0,
+   "broken_share_max": 0.0,
+   "n_transfers": 0,
+   "n_audit_kill": 0,
+   "n_fp_kill": 0,
+   "rec_by_cls": {
+    "бед": {
+     "mean": null,
+     "n": 0
+    },
+    "им": {
+     "mean": null,
+     "n": 0
+    }
+   },
+   "deaths_by_cls": {
+    "бед": 641,
+    "им": 641
+   },
+   "sample_chains": []
+  }
+ },
+ "integrity": {
+  "results_sha256": "5857584e538e210edf9126de4a8bcd5d51d3f59b44f32c7d1132a296a5db38f7"
+ }
+}
