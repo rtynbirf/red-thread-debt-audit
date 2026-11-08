@@ -1,0 +1,44 @@
+name: debt-thread (долговая нить как поток данных)
+
+# Волна ×4 · П47 (issue #3): месячный поток данных долговой нити.
+# Живая выгрузка FRED GFDEBTN → data/debt.csv (каждая строка с URL-источником)
+# → спарклайн (ASCII в README + SVG) → коммит только при реальных изменениях.
+
+on:
+  schedule:
+    - cron: '23 5 3 * *'   # ежемесячно, 3-е число, 05:23 UTC (смещённый ритм)
+  workflow_dispatch: {}
+
+concurrency:
+  group: debt-thread
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  thread:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.12'
+      - name: Живая выгрузка FRED GFDEBTN → data/debt.csv
+        run: python3 scripts/debt_thread.py fetch
+      - name: Спарклайн (SVG + README-блок, детерминированно)
+        run: python3 scripts/debt_thread.py render
+      - name: Приёмка потока (selftest)
+        run: python3 scripts/debt_thread.py selftest
+      - name: Коммит только при реальных изменениях
+        run: |
+          if git diff --quiet -- data/debt.csv data/debt_sparkline.svg README.md; then
+            echo "поток без изменений — коммит не нужен (ритм без шума)"
+          else
+            git config user.name "debt-thread[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/debt.csv data/debt_sparkline.svg README.md
+            git commit -m "debt-thread: свежий csv + спарклайн [skip ci]"
+            git push
+          fi
