@@ -2,6 +2,15 @@
   <img src="banner.png" alt="red-thread-debt-audit — Аудит динамики суверенного долга — красная нить" width="100%">
 </div>
 
+<!--ФОРЖ:МУЗА:НАЧАЛО-->
+<div align="center">
+  <img src="repo-muse.svg" width="100%" alt="Муза red-thread-debt-audit: картина кузни ПОЛИМАТ, раунд 9" />
+  <br/>
+  <img src="forge-divider.svg" width="62%" alt="разделитель кузни ПОЛИМАТ" />
+</div>
+<!--ФОРЖ:МУЗА:КОНЕЦ-->
+
+
 # КРАСНАЯ НИТЬ — аудит динамики суверенного долга
 
 **Долговая яма = рента.** Шесть граней одной точки границы:
@@ -118,3 +127,10 @@ python3 scripts/rta_repo_run.py download/КОЛЬЦО-1_v8_переходная_
 Данные: `data/debt.csv` (242 строк, каждая с URL-источником); генерация: `python3 scripts/debt_thread.py fetch && python3 scripts/debt_thread.py render`.
 
 <!-- DEBT:END -->
+
+<!--ФОРЖ:ПОДВАЛ-->
+---
+
+<div align="center">
+  <sub>◆ картина и штандарт — ручная ковка <a href="https://github.com/rtynbirf">КУЗНИ ПОЛИМАТ</a> · ЧЕЛОВЕК=АККАУНТ=PID1 ◆</sub>
+</div>
