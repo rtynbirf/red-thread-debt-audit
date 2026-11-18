@@ -1,18 +1,18 @@
 <div align="center">
-  <img src="banner.png" alt="red-thread-debt-audit — Аудит динамики суверенного долга — красная нить" width="100%">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/banner.png" alt="red-thread-debt-audit — Аудит динамики суверенного долга — красная нить" width="100%">
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
 <div align="center">
-  <img src="repo-muse.svg" width="100%" alt="Муза red-thread-debt-audit: мастерская КРАСНАЯ НИТЬ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/repo-muse.svg" width="100%" alt="Муза red-thread-debt-audit: мастерская КРАСНАЯ НИТЬ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
   <br/>
-  <img src="forge-divider.svg" width="62%" alt="делитель мастерской КРАСНАЯ НИТЬ" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/forge-divider.svg" width="62%" alt="делитель мастерской КРАСНАЯ НИТЬ" />
 </div>
 <!--ФОРЖ:МУЗА:КОНЕЦ-->
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы red-thread-debt-audit: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы red-thread-debt-audit: строение файлов, лексикон, числа — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
