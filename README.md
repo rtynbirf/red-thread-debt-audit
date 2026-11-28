@@ -24,6 +24,18 @@
 
 # red-thread-debt-audit
 
+<div align="center">
+
+<a href="https://github.com/rtynbirf/red-thread-debt-audit"><img src="banner.png" width="100%" alt="red-thread-debt-audit — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+
+
+
+
+# red-thread-debt-audit
+
 <p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/.github/social-preview.png" alt="red-thread-debt-audit" width="100%"></p>
 
 <div align="center">
