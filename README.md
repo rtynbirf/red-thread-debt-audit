@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/banner.png" alt="red-thread-debt-audit — Аудит динамики суверенного долга — красная нить" width="100%">
+
+<a href="https://github.com/rtynbirf/red-thread-debt-audit"><img src="banner.png" width="100%" alt="red-thread-debt-audit — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
 </div>
 
 <!--ФОРЖ:МУЗА:НАЧАЛО-->
@@ -12,13 +14,25 @@
 
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/revo-page.svg" width="100%" alt="РЕВО-паспорт страницы red-thread-debt-audit: строение файлов, лексикон, числа — по фактическому контенту" />
+  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы red-thread-debt-audit №48 в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
 </div>
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
 |---:|---:|---:|---|---:|
-| 220 | 16 | 58 | 2026-11-16 | 1 |
+| 228 | 16 | 1 | 2026-11-28 | 1 |
 <!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
+# red-thread-debt-audit
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/.github/social-preview.png" alt="red-thread-debt-audit" width="100%"></p>
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/red-thread-debt-audit@main/banner.png" alt="red-thread-debt-audit — Аудит динамики суверенного долга — красная нить" width="100%">
+</div>
+
+
+
+
 
 
 
